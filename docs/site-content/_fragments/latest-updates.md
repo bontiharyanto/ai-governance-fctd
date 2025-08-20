@@ -1,5 +1,7 @@
 ## 🗓️ Latest Updates
 
+- 2025-08-20 — **ci: add MkDocs → GitHub Pages deploy workflow**  
+  _by bontiharyanto_
 - 2025-08-20 — **docs: refresh index and latest updates**  
   _by bontiharyanto_
 - 2025-08-20 — **first commit**  

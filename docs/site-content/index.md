@@ -57,3 +57,4 @@ Tujuannya: memastikan solusi AI aman, transparan, patuh hukum, dan bernilai bisn
 Selamat datang di dokumentasi FCTD AI Governance.
 Gunakan menu di kiri untuk navigasi.
 
+Wed Aug 20 18:19:53 WIB 2025
