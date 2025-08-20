@@ -1,7 +1,14 @@
+[![Deploy MkDocs (gh-pages)](https://github.com/bontiharyanto/ai-governance-fctd/actions/workflows/mkdocs-ghpages.yml/badge.svg)](https://github.com/bontiharyanto/ai-governance-fctd/actions/workflows/mkdocs-ghpages.yml)
+[![GitHub Pages](https://img.shields.io/github/deployments/bontiharyanto/ai-governance-fctd/github-pages?label=pages)](https://github.com/bontiharyanto/ai-governance-fctd/deployments/github-pages)
+
 # 🏛️ FCTD AI Governance Framework
 
 Selamat datang di **From Compliance To Dominant (FCTD) AI Governance**.  
 Dokumentasi ini memuat prinsip, risiko, kontrol, siklus hidup model, dan template yang dipakai FCTD untuk tata kelola AI.
+
+[![Deploy MkDocs (gh-pages)](https://github.com/bontiharyanto/ai-governance-fctd/actions/workflows/mkdocs-ghpages.yml/badge.svg)](https://github.com/bontiharyanto/ai-governance-fctd/actions/workflows/mkdocs-ghpages.yml)
+[![GitHub Pages](https://img.shields.io/github/deployments/bontiharyanto/ai-governance-fctd/github-pages?label=pages)](https://github.com/bontiharyanto/ai-governance-fctd/deployments/github-pages)
+
 
 ---
 
