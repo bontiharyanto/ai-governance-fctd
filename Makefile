@@ -5,7 +5,12 @@ MKDOCS ?= $(HOME)/.local/bin/mkdocs
 PORT ?= 9000
 MSG ?= "chore: update docs site"
 
-.PHONY: updates docs serve kill-port deploy
+REMOTE_URL := $(shell git config --get remote.origin.url)
+OWNER := $(shell basename -s .git $$(dirname $(REMOTE_URL)))
+REPO  := $(shell basename -s .git $(REMOTE_URL))
+PAGES_URL := https://$(OWNER).github.io/$(REPO)/
+
+.PHONY: updates docs serve kill-port deploy gh-pages-open ship
 
 updates:
 	python3 scripts/gen_updates.py
@@ -25,3 +30,17 @@ deploy: updates
 	@git commit -m "$(MSG)" || echo "⚠️  No changes to commit"
 	@git push origin main
 	@echo "✅ Docs pushed. GitHub Actions akan membangun & deploy ke Pages."
+
+gh-pages-open:
+	@echo "🌐 Opening $(PAGES_URL)"
+	@if [ "$$(uname -s)" = "Darwin" ]; then \
+		open "$(PAGES_URL)"; \
+	else \
+		( command -v xdg-open >/dev/null && xdg-open "$(PAGES_URL)" ) || echo "$(PAGES_URL)"; \
+	fi
+
+WAIT ?= 45
+ship: deploy
+	@echo "⏳ Menunggu $(WAIT) detik agar GitHub Actions build selesai..."
+	@sleep $(WAIT)
+	$(MAKE) gh-pages-open
