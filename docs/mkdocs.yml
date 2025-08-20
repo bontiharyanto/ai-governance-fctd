@@ -1,0 +1,29 @@
+site_name: FCTD AI Governance
+nav:
+  - Home: ../README.md
+  - Governance:
+    - Principles: ../governance/principles.md
+    - Roles & Responsibilities: ../governance/roles-and-responsibilities.md
+    - Operating Model: ../governance/operating-model.md
+  - Risk:
+    - Register: ../risk/risk-register.csv
+    - Risks:
+      - Hallucination: ../risk/risks/hallucination.md
+      - Data Leakage: ../risk/risks/data-leakage.md
+      - Model Drift: ../risk/risks/model-drift.md
+    - Controls:
+      - Prompt Management: ../risk/controls/prompt-management.md
+      - PII Redaction: ../risk/controls/pii-redaction.md
+      - Human-in-the-Loop: ../risk/controls/human-in-the-loop.md
+  - Lifecycle:
+    - Ideation: ../lifecycle/ideation-checklist.md
+    - Data Governance: ../lifecycle/data-governance.md
+    - Development: ../lifecycle/model-development.md
+    - Evaluation: ../lifecycle/evaluation.md
+    - Deployment: ../lifecycle/deployment.md
+    - Monitoring: ../lifecycle/monitoring.md
+  - Templates:
+    - AIA: ../templates/ai-impact-assessment.md
+    - Model Card: ../templates/model-card.md
+    - Data Sheet: ../templates/data-sheet.md
+    - Red Teaming: ../templates/red-teaming-report.md

@@ -1,0 +1,4 @@
+risk_id,risk_name,description,inherent_risk,controls,owner,status
+R-001,Hallucination,"Model menghasilkan info salah/menyesatkan",High,"C-001; C-004",Head of AI,Active
+R-002,Data Leakage,"PII/rahasia bocor via input/output",High,"C-002; C-003",CISO,Active
+R-003,Model Drift,"Penurunan kinerja karena distribusi data berubah",Medium,"C-005",ML Lead,Planned
