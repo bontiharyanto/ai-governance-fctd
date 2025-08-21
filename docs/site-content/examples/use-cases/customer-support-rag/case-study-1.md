@@ -1,23 +1,16 @@
-# Case Study: AI Credit Scoring di Lembaga Keuangan
+# Prinsip Tata Kelola AI
 
-## Konteks
-- Penggunaan AI untuk penilaian kredit.
-- Risiko → diskriminasi, data pribadi, kepatuhan POJK.
+Prinsip tata kelola AI dalam FCTD mengintegrasikan beberapa framework:
 
-## Framework Mapping
-- **COBIT APO12**: risk assessment.
-- **NIST AI RMF**: fairness & accountability.
-- **UU PDP**: perlindungan data pribadi.
-- **POJK 38/2016**: keamanan sistem TI.
-
-## Implementasi Kontrol
-- Model card dipublikasikan.
-- Red teaming dilakukan → uji bias gender & etnis.
-- Pseudonimisasi data sesuai UU PDP.
+1. **Transparansi**  
+   Selaras dengan *NIST AI RMF* [NIST, 2023] dan *COBIT DSS05* [ISACA, 2019].  
+2. **Akuntabilitas**  
+   Mengacu pada *COBIT EDM01* dan *POJK 13/2021* yang mewajibkan tanggung jawab dewan direksi.  
+3. **Privasi & Perlindungan Data**  
+   Berdasarkan *UU No. 27 Tahun 2022 (UU PDP)*.  
+4. **Etika & Keadilan**  
+   Sesuai *Strategi Nasional Kecerdasan Artifisial Indonesia (STRANAS AI 2020–2045)*.  
+5. **Nilai Bisnis & Efisiensi**  
+   Mengacu pada *TOGAF ADM* untuk memastikan selaras dengan strategi bisnis.
 
 ---
-📖 **References**:
-- NIST AI RMF 1.0, 2023
-- COBIT 2019
-- POJK 38/2016
-- UU PDP 2022

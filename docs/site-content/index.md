@@ -1,10 +1,13 @@
-[![Deploy MkDocs (gh-pages)](https://github.com/bontiharyanto/ai-governance-fctd/actions/workflows/mkdocs-ghpages.yml/badge.svg)](https://github.com/bontiharyanto/ai-governance-fctd/actions/workflows/mkdocs-ghpages.yml)
-[![GitHub Pages](https://img.shields.io/github/deployments/bontiharyanto/ai-governance-fctd/github-pages?label=pages)](https://github.com/bontiharyanto/ai-governance-fctd/deployments/github-pages)
 
 # 🏛️ FCTD AI Governance Framework
 
 Selamat datang di **From Compliance To Dominant (FCTD) AI Governance**.  
 Dokumentasi ini memuat prinsip, risiko, kontrol, siklus hidup model, dan template yang dipakai FCTD untuk tata kelola AI.
+
+<p align="center">
+  <img src="assets/img/fctd-governance.png" alt="FCTD AI Governance Framework" width="920">
+</p>
+
 
 [![Deploy MkDocs (gh-pages)](https://github.com/bontiharyanto/ai-governance-fctd/actions/workflows/mkdocs-ghpages.yml/badge.svg)](https://github.com/bontiharyanto/ai-governance-fctd/actions/workflows/mkdocs-ghpages.yml)
 [![GitHub Pages](https://img.shields.io/github/deployments/bontiharyanto/ai-governance-fctd/github-pages?label=pages)](https://github.com/bontiharyanto/ai-governance-fctd/deployments/github-pages)
@@ -19,7 +22,6 @@ Tujuannya: memastikan solusi AI aman, transparan, patuh hukum, dan bernilai bisn
 ---
 
 ## 📂 Struktur Dokumentasi
-
 ### 1. Governance
 - [Principles](governance/principles.md)  
 - [Roles & Responsibilities](governance/roles-and-responsibilities.md)  
@@ -61,7 +63,5 @@ Tujuannya: memastikan solusi AI aman, transparan, patuh hukum, dan bernilai bisn
 > ✨ Dokumentasi ini dibangun dengan [MkDocs](https://www.mkdocs.org/) dan otomatis dipublikasikan ke **GitHub Pages**.
 # FCTD AI Governance
 
-Selamat datang di dokumentasi FCTD AI Governance.
-Gunakan menu di kiri untuk navigasi.
 
 Wed Aug 20 18:19:53 WIB 2025

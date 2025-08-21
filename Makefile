@@ -43,4 +43,15 @@ WAIT ?= 45
 ship: deploy
 	@echo "⏳ Menunggu $(WAIT) detik agar GitHub Actions build selesai..."
 	@sleep $(WAIT)
-	$(MAKE) gh-pages-open
+	$(MAKE) gh-pages-open.PHONY: research
+research:
+	python tools/ai_analysis/survey_analysis.py --csv data/sample_survey.csv --out results_survey.json
+	python tools/ai_analysis/visualize_survey.py --csv data/sample_survey.csv --results results_survey.json --outdir reports
+	python tools/ai_analysis/reliability.py --csv data/sample_survey.csv --out reliability.json
+	~/.local/bin/mkdocs build -f docs/mkdocs.yml
+
+.PHONY: research-sync
+research-sync:
+	python tools/ai_analysis/sync_reports.py
+	~/.local/bin/mkdocs build -f docs/mkdocs.yml
+

@@ -1,25 +1,8 @@
-# Risk Register
+# 📊 Risk Register – AI Governance
 
-## Kategori Risiko AI
-Mengacu pada **NIST AI RMF** & **COBIT APO12**:
-
-- **Risiko Privasi & Kebocoran Data** → UU PDP, POJK TI.
-- **Risiko Bias & Diskriminasi** → NIST AI RMF: Fairness.
-- **Risiko Model Drift** → STRANAS AI: monitoring jangka panjang.
-- **Risiko Cybersecurity** → COBIT DSS05.
-- **Risiko Kepatuhan Hukum** → UU PDP, UU ITE, regulasi sektor.
-
-| ID | Risiko | Dampak | Probabilitas | Mitigasi | Framework Acuan |
-|----|--------|---------|--------------|----------|-----------------|
-| R1 | Kebocoran PII dari dataset | Tinggi | Sedang | Pseudonimisasi, masking, enkripsi | UU PDP, POJK |
-| R2 | Bias algoritmik (gender/ras) | Tinggi | Sedang | Fairness testing, XAI | NIST AI RMF |
-| R3 | Model drift | Sedang | Tinggi | Continuous Monitoring, retraining | STRANAS AI |
-| R4 | Serangan adversarial | Tinggi | Rendah | Red teaming, penetration testing | NIST, COBIT |
-| R5 | Non-compliance hukum | Tinggi | Sedang | Legal review, DPIA | UU PDP, POJK |
-
----
-📖 **References**:
-- NIST AI RMF 1.0 (2023)
-- COBIT 2019 (APO12, DSS05)
-- UU PDP No.27/2022
-- POJK No.38/2016
+| ID | Risiko            | Framework Referensi                | Dampak | Mitigasi                              | Owner |
+|----|------------------|------------------------------------|--------|---------------------------------------|-------|
+| R1 | Bias dataset     | NIST AI RMF, STRANAS AI            | Tinggi | Bias testing, fairness metrics         | Data Scientist |
+| R2 | Kebocoran PII    | UU PDP, POJK                       | Tinggi | PII Redaction, consent mgmt           | DPO |
+| R3 | Model drift      | COBIT MEA, NIST                    | Sedang | Retraining pipeline                   | MLOps |
+| R4 | Hallucination LLM| NIST AI RMF                        | Sedang | Prompt mgmt, RAG                      | AI Engineer |
