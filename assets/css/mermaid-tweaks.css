@@ -1,0 +1,4 @@
+.mermaid { margin: 1rem auto; max-width: 1100px; }
+.mermaid svg { filter: drop-shadow(0 6px 16px rgba(0,0,0,.08)); border-radius: 12px; }
+.mermaid .edgeLabel { font-size: 12px; }
+.mermaid .label { font-size: 12px; }

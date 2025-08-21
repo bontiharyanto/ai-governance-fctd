@@ -1,0 +1,8 @@
+{
+  "effect_size": 0.5,
+  "alpha": 0.05,
+  "power": 0.8,
+  "ratio": 1.0,
+  "min_sample_per_group": 63.76561058785405,
+  "min_total_samples": 127.5312211757081
+}
