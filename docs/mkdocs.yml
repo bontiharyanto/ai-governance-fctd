@@ -1,17 +1,5 @@
 site_name: FCTD AI Governance
 docs_dir: site-content
-markdown_extensions:
-  - admonition
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - attr_list
-
-extra_javascript:
-  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
-  - assets/js/mermaid-init.js
 
 theme:
   name: material
@@ -29,22 +17,33 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - assets/js/mermaid-init.js
+
+extra_css:
+  - assets/css/mermaid-tweaks.css
 
 nav:
   - Home: index.md
   - Governance:
-    - Principles: governance/principles.md
+      - Principles: governance/principles.md
   - Risk:
-    - Risk Register: risk/risk-register.md
+      - Risk Register: risk/risk-register.md
   - Controls:
-    - Prompt Management: controls/prompt-management.md
-    - PII Redaction: controls/pii-redaction.md
+      - Prompt Management: controls/prompt-management.md
+      - PII Redaction: controls/pii-redaction.md
   - Lifecycle:
-    - AI Lifecycle: lifecycle/ai-lifecycle.md
+      - AI Lifecycle: lifecycle/ai-lifecycle.md
   - Roadmap: roadmap.md
   - References: references.md
   - Research:
-    - Framework Diagram: research/research-framework.md
-    - AI Toolkit: research/ai-toolkit.md
-    - Results: research/results.md
-
+      - Framework Diagram: research/research-framework.md
+      - AI Toolkit: research/ai-toolkit.md
+      - Results: research/results.md
