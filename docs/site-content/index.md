@@ -1,67 +1,53 @@
-
 # 🏛️ FCTD AI Governance Framework
 
-Selamat datang di **From Compliance To Dominant (FCTD) AI Governance**.  
-Dokumentasi ini memuat prinsip, risiko, kontrol, siklus hidup model, dan template yang dipakai FCTD untuk tata kelola AI.
+Selamat datang di **From Compliance To Dominant (FCTD)** — dokumentasi tata kelola AI yang menyelaraskan **DPPT (Data, Process, People, Technology, Policy)** dengan **TOGAF, COBIT, NIST AI RMF**, serta regulasi **UU PDP, POJK, dan STRANAS AI**.
 
-<p align="center">
-  <img src="assets/img/fctd-governance.png" alt="FCTD AI Governance Framework" width="920">
-</p>
-
-
-[![Deploy MkDocs (gh-pages)](https://github.com/bontiharyanto/ai-governance-fctd/actions/workflows/mkdocs-ghpages.yml/badge.svg)](https://github.com/bontiharyanto/ai-governance-fctd/actions/workflows/mkdocs-ghpages.yml)
-[![GitHub Pages](https://img.shields.io/github/deployments/bontiharyanto/ai-governance-fctd/github-pages?label=pages)](https://github.com/bontiharyanto/ai-governance-fctd/deployments/github-pages)
-
+> 🎯 Tujuan: memastikan solusi AI **aman, transparan, patuh**, dan **bernilai bisnis**.
 
 ---
 
-## 📖 Ringkasan
-Framework ini terinspirasi dari FINOS AI Governance Framework, dengan penyesuaian ke konteks FCTD dan regulasi lokal (UU PDP, ISO/IEC 42001, dsb).  
-Tujuannya: memastikan solusi AI aman, transparan, patuh hukum, dan bernilai bisnis.
+## 🚀 Mulai Cepat
+
+- 🔗 **Framework Diagram**  
+  Visual alignment DPPT ↔ Frameworks ↔ Regulasi.  
+  👉 [Buka diagram](research/research-framework/)
+
+- 🧪 **AI Toolkit (Analisis)**  
+  Skrip Python untuk clustering, regresi, dan visual readiness.  
+  👉 [AI Toolkit](research/ai-toolkit/)
+
+- 📊 **Hasil & Visualisasi**  
+  Radar cluster, koefisien regresi, dan metrik evaluasi.  
+  👉 [Results](research/results/)
 
 ---
 
-## 📂 Struktur Dokumentasi
-### 1. Governance
-- [Principles](governance/principles.md)  
-- [Roles & Responsibilities](governance/roles-and-responsibilities.md)  
-- [Operating Model](governance/operating-model.md)  
+## 📚 Struktur Dokumen
 
-### 2. Risk & Controls
-- [Risk Register](risk/risk-register.md)  
-- Risks: [Hallucination](risk/risks/hallucination.md) • [Data Leakage](risk/risks/data-leakage.md) • [Model Drift](risk/risks/model-drift.md)  
-- Controls: [Prompt Management](risk/controls/prompt-management.md) • [PII Redaction](risk/controls/pii-redaction.md) • [Human-in-the-Loop](risk/controls/human-in-the-loop.md)  
-
-### 3. Lifecycle
-- [Ideation Checklist](lifecycle/ideation-checklist.md)  
-- [Data Governance](lifecycle/data-governance.md)  
-- [Model Development](lifecycle/model-development.md)  
-- [Evaluation](lifecycle/evaluation.md)  
-- [Deployment](lifecycle/deployment.md)  
-- [Monitoring](lifecycle/monitoring.md)  
-
-### 4. Templates
-- [AI Impact Assessment](templates/ai-impact-assessment.md)  
-- [Model Card](templates/model-card.md)  
-- [Data Sheet](templates/data-sheet.md)  
-- [Red Teaming Report](templates/red-teaming-report.md)  
-
-### 5. Examples
-- [AIA: Customer Support RAG](examples/use-cases/customer-support-rag/aia.md)  
-- [Model Card: Customer Support RAG](examples/use-cases/customer-support-rag/model-card.md)  
+- **Governance**
+  - [Principles](governance/principles.md)
+- **Risk**
+  - [Risk Register](risk/risk-register.md)
+- **Controls**
+  - [Prompt Management](controls/prompt-management.md) ・ [PII Redaction](controls/pii-redaction.md)
+- **Lifecycle**
+  - [AI Lifecycle](lifecycle/ai-lifecycle.md)
+- **Roadmap**
+  - [Roadmap](roadmap.md)
+- **References**
+  - [References](references.md)
 
 ---
 
-## 🚀 Next Steps
-1. Review risiko utama dan kontrol prioritas.  
-2. Lengkapi AIA & Model Card untuk setiap use case baru.  
-3. Gunakan checklist Go-Live di PR rilis.  
-4. Pantau metrik & audit berkala.  
+## 🧩 Kerangka Riset (Ringkas)
+- **Research Framework**: DPPT ↔ (TOGAF/COBIT/NIST AI RMF) ↔ (UU PDP/POJK/STRANAS AI)  
+- **Analytical Methods**: clustering (KMeans), regresi (Linear/Ridge), korelasi & uji asumsi  
+- **Evaluation**: RMSE/MAE/R², silhouette score, stability  
+- **Validation**: k-fold CV, hold-out, robustness + expert review
+
+> 💡 Lihat detailnya di halaman: [Framework Diagram](research/research-framework/)
 
 ---
 
-> ✨ Dokumentasi ini dibangun dengan [MkDocs](https://www.mkdocs.org/) dan otomatis dipublikasikan ke **GitHub Pages**.
-# FCTD AI Governance
-
-
-Wed Aug 20 18:19:53 WIB 2025
+### ℹ️ Status & Deploy
+Situs ini dibangun dengan **MkDocs Material** dan diterbitkan otomatis ke **GitHub Pages** (branch `gh-pages`).
