@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../hallucination/">
+        <link rel="prev" href="../../governance/operating-model/">
       
       
-        <link rel="next" href="../model-drift/">
+        <link rel="next" href="../risks/hallucination/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
     
     
       
-        <title>Data Leakage - FCTD AI Governance</title>
+        <title>Risk Register - FCTD AI Governance</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
       
 
@@ -43,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#risk-data-leakage" class="md-skip">
+        <a href="#risk-register" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="FCTD AI Governance" class="md-header__button md-logo" aria-label="FCTD AI Governance" data-md-component="logo">
+    <a href="../.." title="FCTD AI Governance" class="md-header__button md-logo" aria-label="FCTD AI Governance" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Leakage
+              Risk Register
             
           </span>
         </div>
@@ -180,7 +180,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="FCTD AI Governance" class="md-nav__button md-logo" aria-label="FCTD AI Governance" data-md-component="logo">
+    <a href="../.." title="FCTD AI Governance" class="md-nav__button md-logo" aria-label="FCTD AI Governance" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -198,7 +198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -265,7 +265,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../governance/principles/" class="md-nav__link">
+      <a href="../../governance/principles/" class="md-nav__link">
         
   
   
@@ -288,7 +288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../governance/roles-and-responsibilities/" class="md-nav__link">
+      <a href="../../governance/roles-and-responsibilities/" class="md-nav__link">
         
   
   
@@ -311,7 +311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../governance/operating-model/" class="md-nav__link">
+      <a href="../../governance/operating-model/" class="md-nav__link">
         
   
   
@@ -383,10 +383,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../risk-register/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -397,6 +406,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -406,8 +416,6 @@
                 
   
   
-    
-  
   
   
     
@@ -417,11 +425,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -437,7 +447,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Risks
@@ -451,7 +461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hallucination/" class="md-nav__link">
+      <a href="../risks/hallucination/" class="md-nav__link">
         
   
   
@@ -471,19 +481,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../risks/data-leakage/" class="md-nav__link">
         
   
   
@@ -494,7 +495,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -507,7 +507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model-drift/" class="md-nav__link">
+      <a href="../risks/model-drift/" class="md-nav__link">
         
   
   
@@ -580,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controls/prompt-management/" class="md-nav__link">
+      <a href="../controls/prompt-management/" class="md-nav__link">
         
   
   
@@ -603,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controls/pii-redaction/" class="md-nav__link">
+      <a href="../controls/pii-redaction/" class="md-nav__link">
         
   
   
@@ -626,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controls/human-in-the-loop/" class="md-nav__link">
+      <a href="../controls/human-in-the-loop/" class="md-nav__link">
         
   
   
@@ -709,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lifecycle/ideation-checklist/" class="md-nav__link">
+      <a href="../../lifecycle/ideation-checklist/" class="md-nav__link">
         
   
   
@@ -732,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lifecycle/data-governance/" class="md-nav__link">
+      <a href="../../lifecycle/data-governance/" class="md-nav__link">
         
   
   
@@ -755,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lifecycle/model-development/" class="md-nav__link">
+      <a href="../../lifecycle/model-development/" class="md-nav__link">
         
   
   
@@ -778,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lifecycle/evaluation/" class="md-nav__link">
+      <a href="../../lifecycle/evaluation/" class="md-nav__link">
         
   
   
@@ -801,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lifecycle/deployment/" class="md-nav__link">
+      <a href="../../lifecycle/deployment/" class="md-nav__link">
         
   
   
@@ -824,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lifecycle/monitoring/" class="md-nav__link">
+      <a href="../../lifecycle/monitoring/" class="md-nav__link">
         
   
   
@@ -899,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../templates/ai-impact-assessment/" class="md-nav__link">
+      <a href="../../templates/ai-impact-assessment/" class="md-nav__link">
         
   
   
@@ -922,7 +922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../templates/model-card/" class="md-nav__link">
+      <a href="../../templates/model-card/" class="md-nav__link">
         
   
   
@@ -945,7 +945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../templates/data-sheet/" class="md-nav__link">
+      <a href="../../templates/data-sheet/" class="md-nav__link">
         
   
   
@@ -968,7 +968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../templates/red-teaming-report/" class="md-nav__link">
+      <a href="../../templates/red-teaming-report/" class="md-nav__link">
         
   
   
@@ -1043,7 +1043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../examples/use-cases/customer-support-rag/aia/" class="md-nav__link">
+      <a href="../../examples/use-cases/customer-support-rag/aia/" class="md-nav__link">
         
   
   
@@ -1066,7 +1066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../examples/use-cases/customer-support-rag/model-card/" class="md-nav__link">
+      <a href="../../examples/use-cases/customer-support-rag/model-card/" class="md-nav__link">
         
   
   
@@ -1105,8 +1105,10 @@
 
 
 
-<h1 id="risk-data-leakage">Risk: Data Leakage</h1>
-<p>Kebocoran PII/rahasia melalui input/output/model artifacts.</p>
+<h1 id="risk-register">Risk Register</h1>
+<p>Belum ada halaman yang dihasilkan.
+- Tambahkan file <code>risk/risk-register.csv</code> di repo, atau
+- Isi manual daftar risiko di sini.</p>
 
 
 
@@ -1161,10 +1163,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.sections", "navigation.top", "search.suggest", "content.code.copy", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.sections", "navigation.top", "search.suggest", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
