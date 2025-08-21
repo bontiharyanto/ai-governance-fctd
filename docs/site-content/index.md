@@ -24,28 +24,23 @@ Selamat datang di **From Compliance To Dominant (FCTD)** — dokumentasi tata ke
 
 ## 📚 Struktur Dokumen
 
-- **Governance**
-  - [Principles](governance/principles.md)
-- **Risk**
-  - [Risk Register](risk/risk-register.md)
-- **Controls**
-  - [Prompt Management](controls/prompt-management.md) ・ [PII Redaction](controls/pii-redaction.md)
-- **Lifecycle**
-  - [AI Lifecycle](lifecycle/ai-lifecycle.md)
-- **Roadmap**
-  - [Roadmap](roadmap.md)
-- **References**
-  - [References](references.md)
+- **Governance** → [Principles](governance/principles.md)  
+- **Risk** → [Risk Register](risk/risk-register.md)  
+- **Controls** → [Prompt Management](controls/prompt-management.md) ・ [PII Redaction](controls/pii-redaction.md)  
+- **Lifecycle** → [AI Lifecycle](lifecycle/ai-lifecycle.md)  
+- **Roadmap** → [Roadmap](roadmap.md)  
+- **References** → [References](references.md)
 
 ---
 
 ## 🧩 Kerangka Riset (Ringkas)
+
 - **Research Framework**: DPPT ↔ (TOGAF/COBIT/NIST AI RMF) ↔ (UU PDP/POJK/STRANAS AI)  
 - **Analytical Methods**: clustering (KMeans), regresi (Linear/Ridge), korelasi & uji asumsi  
 - **Evaluation**: RMSE/MAE/R², silhouette score, stability  
 - **Validation**: k-fold CV, hold-out, robustness + expert review
 
-> 💡 Lihat detailnya di halaman: [Framework Diagram](research/research-framework/)
+💡 Detail: [Framework Diagram](research/research-framework/)
 
 ---
 
