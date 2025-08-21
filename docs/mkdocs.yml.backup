@@ -1,7 +1,5 @@
 site_name: FCTD AI Governance
-site_url: https://bontiharyanto.github.io/ai-governance-fctd/
 docs_dir: site-content
-
 
 theme:
   name: material
@@ -29,10 +27,9 @@ extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
   - assets/js/mermaid-init.js
 
+# (opsional) agar SVG mermaid center & ada drop-shadow
 extra_css:
   - assets/css/mermaid-tweaks.css
-  - assets/css/overrides.css
-
 
 nav:
   - Home: index.md

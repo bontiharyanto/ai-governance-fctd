@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://bontiharyanto.github.io/ai-governance-fctd/">
+      
       
       
         <link rel="next" href="governance/principles/">
@@ -40,6 +42,10 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="assets/css/mermaid-tweaks.css">
+    
+      <link rel="stylesheet" href="assets/css/overrides.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -246,64 +252,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ringkasan" class="md-nav__link">
+  <a href="#mulai-cepat" class="md-nav__link">
     <span class="md-ellipsis">
-      📖 Ringkasan
+      🚀 Mulai Cepat
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#struktur-dokumentasi" class="md-nav__link">
+  <a href="#struktur-dokumen" class="md-nav__link">
     <span class="md-ellipsis">
-      📂 Struktur Dokumentasi
+      📚 Struktur Dokumen
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📂 Struktur Dokumentasi">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kerangka-riset-ringkas" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Kerangka Riset (Ringkas)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 Kerangka Riset (Ringkas)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-governance" class="md-nav__link">
+  <a href="#status-deploy" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Governance
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-risk-controls" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Risk &amp; Controls
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-lifecycle" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Lifecycle
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-templates" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Templates
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Examples
+      🔄 Status &amp; Deploy
     </span>
   </a>
   
@@ -311,15 +290,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      🚀 Next Steps
-    </span>
-  </a>
   
 </li>
       
@@ -826,67 +796,54 @@
 
 
 <h1 id="fctd-ai-governance-framework">🏛️ FCTD AI Governance Framework</h1>
-<p>Selamat datang di <strong>From Compliance To Dominant (FCTD) AI Governance</strong>.<br />
-Dokumentasi ini memuat prinsip, risiko, kontrol, siklus hidup model, dan template yang dipakai FCTD untuk tata kelola AI.</p>
-<p align="center">
-  <img src="assets/img/fctd-governance.png" alt="FCTD AI Governance Framework" width="920">
-</p>
-
-<p><a href="https://github.com/bontiharyanto/ai-governance-fctd/actions/workflows/mkdocs-ghpages.yml"><img alt="Deploy MkDocs (gh-pages)" src="https://github.com/bontiharyanto/ai-governance-fctd/actions/workflows/mkdocs-ghpages.yml/badge.svg" /></a>
-<a href="https://github.com/bontiharyanto/ai-governance-fctd/deployments/github-pages"><img alt="GitHub Pages" src="https://img.shields.io/github/deployments/bontiharyanto/ai-governance-fctd/github-pages?label=pages" /></a></p>
-<hr />
-<h2 id="ringkasan">📖 Ringkasan</h2>
-<p>Framework ini terinspirasi dari FINOS AI Governance Framework, dengan penyesuaian ke konteks FCTD dan regulasi lokal (UU PDP, ISO/IEC 42001, dsb).<br />
-Tujuannya: memastikan solusi AI aman, transparan, patuh hukum, dan bernilai bisnis.</p>
-<hr />
-<h2 id="struktur-dokumentasi">📂 Struktur Dokumentasi</h2>
-<h3 id="1-governance">1. Governance</h3>
-<ul>
-<li><a href="governance/principles/">Principles</a>  </li>
-<li><a href="governance/roles-and-responsibilities/">Roles &amp; Responsibilities</a>  </li>
-<li><a href="governance/operating-model/">Operating Model</a>  </li>
-</ul>
-<h3 id="2-risk-controls">2. Risk &amp; Controls</h3>
-<ul>
-<li><a href="risk/risk-register/">Risk Register</a>  </li>
-<li>Risks: <a href="risk/risks/hallucination/">Hallucination</a> • <a href="risk/risks/data-leakage/">Data Leakage</a> • <a href="risk/risks/model-drift/">Model Drift</a>  </li>
-<li>Controls: <a href="risk/controls/prompt-management/">Prompt Management</a> • <a href="risk/controls/pii-redaction/">PII Redaction</a> • <a href="risk/controls/human-in-the-loop/">Human-in-the-Loop</a>  </li>
-</ul>
-<h3 id="3-lifecycle">3. Lifecycle</h3>
-<ul>
-<li><a href="lifecycle/ideation-checklist/">Ideation Checklist</a>  </li>
-<li><a href="lifecycle/data-governance/">Data Governance</a>  </li>
-<li><a href="lifecycle/model-development/">Model Development</a>  </li>
-<li><a href="lifecycle/evaluation/">Evaluation</a>  </li>
-<li><a href="lifecycle/deployment/">Deployment</a>  </li>
-<li><a href="lifecycle/monitoring/">Monitoring</a>  </li>
-</ul>
-<h3 id="4-templates">4. Templates</h3>
-<ul>
-<li><a href="templates/ai-impact-assessment/">AI Impact Assessment</a>  </li>
-<li><a href="templates/model-card/">Model Card</a>  </li>
-<li><a href="templates/data-sheet/">Data Sheet</a>  </li>
-<li><a href="templates/red-teaming-report/">Red Teaming Report</a>  </li>
-</ul>
-<h3 id="5-examples">5. Examples</h3>
-<ul>
-<li><a href="examples/use-cases/customer-support-rag/aia/">AIA: Customer Support RAG</a>  </li>
-<li><a href="examples/use-cases/customer-support-rag/model-card/">Model Card: Customer Support RAG</a>  </li>
-</ul>
-<hr />
-<h2 id="next-steps">🚀 Next Steps</h2>
-<ol>
-<li>Review risiko utama dan kontrol prioritas.  </li>
-<li>Lengkapi AIA &amp; Model Card untuk setiap use case baru.  </li>
-<li>Gunakan checklist Go-Live di PR rilis.  </li>
-<li>Pantau metrik &amp; audit berkala.  </li>
-</ol>
-<hr />
+<p>Selamat datang di <strong>From Compliance To Dominant (FCTD)</strong> — dokumentasi tata kelola AI yang menyelaraskan <strong>DPPT (Data, Process, People, Technology, Policy)</strong> dengan <strong>TOGAF, COBIT, NIST AI RMF</strong>, serta regulasi <strong>UU PDP, POJK, STRANAS AI</strong>.</p>
 <blockquote>
-<p>✨ Dokumentasi ini dibangun dengan <a href="https://www.mkdocs.org/">MkDocs</a> dan otomatis dipublikasikan ke <strong>GitHub Pages</strong>.</p>
+<p>🎯 Tujuan: memastikan solusi AI <strong>aman, transparan, patuh</strong>, dan <strong>bernilai bisnis</strong>.</p>
 </blockquote>
-<h1 id="fctd-ai-governance">FCTD AI Governance</h1>
-<p>Wed Aug 20 18:19:53 WIB 2025</p>
+<div class="buttons">
+<p><a class="md-button md-button--primary" href="research/research-framework/">📊 Lihat Framework Diagram</a>
+<a class="md-button" href="research/ai-toolkit/">🧪 AI Toolkit</a>
+<a class="md-button" href="research/results/">📈 Hasil Analisis</a></p>
+</div>
+<hr />
+<h2 id="mulai-cepat">🚀 Mulai Cepat</h2>
+<ul>
+<li>
+<p><strong>Framework Diagram</strong> – visual alignment DPPT ↔ Frameworks ↔ Regulasi.<br />
+  👉 <a href="research/research-framework/">Buka diagram</a></p>
+</li>
+<li>
+<p><strong>AI Toolkit (Analisis)</strong> – skrip Python untuk clustering, regresi, &amp; visual readiness.<br />
+  👉 <a href="research/ai-toolkit/">AI Toolkit</a></p>
+</li>
+<li>
+<p><strong>Hasil &amp; Visualisasi</strong> – radar cluster, koefisien regresi, metrik evaluasi.<br />
+  👉 <a href="research/results/">Results</a></p>
+</li>
+</ul>
+<hr />
+<h2 id="struktur-dokumen">📚 Struktur Dokumen</h2>
+<ul>
+<li><strong>Governance</strong> → <a href="governance/principles/">Principles</a>  </li>
+<li><strong>Risk</strong> → <a href="risk/risk-register/">Risk Register</a>  </li>
+<li><strong>Controls</strong> → <a href="controls/prompt-management/">Prompt Management</a> ・ <a href="controls/pii-redaction/">PII Redaction</a>  </li>
+<li><strong>Lifecycle</strong> → <a href="lifecycle/ai-lifecycle/">AI Lifecycle</a>  </li>
+<li><strong>Roadmap</strong> → <a href="roadmap/">Roadmap</a>  </li>
+<li><strong>References</strong> → <a href="references/">References</a></li>
+</ul>
+<hr />
+<h2 id="kerangka-riset-ringkas">🧩 Kerangka Riset (Ringkas)</h2>
+<ul>
+<li><strong>Research Framework</strong>: DPPT ↔ (TOGAF/COBIT/NIST AI RMF) ↔ (UU PDP/POJK/STRANAS AI)  </li>
+<li><strong>Analytical Methods</strong>: Clustering (KMeans), Regresi (Linear/Ridge), Korelasi &amp; uji asumsi  </li>
+<li><strong>Evaluation</strong>: RMSE/MAE/R², silhouette score, stability  </li>
+<li><strong>Validation</strong>: k-fold CV, hold-out, robustness + expert review</li>
+</ul>
+<p>ℹ️ Detail lengkap: <a href="research/research-framework/">Framework Diagram</a></p>
+<hr />
+<h3 id="status-deploy">🔄 Status &amp; Deploy</h3>
+<p>Situs ini dibangun dengan <strong>MkDocs Material</strong> dan diterbitkan ke <strong>GitHub Pages</strong> (branch <code>gh-pages</code>).</p>
+<p><a href="https://github.com/bontiharyanto/ai-governance-fctd/actions/workflows/pages-build-deployment.yml"><img alt="Pages Deploy" src="https://github.com/bontiharyanto/ai-governance-fctd/actions/workflows/pages-build-deployment.yml/badge.svg?branch=gh-pages" /></a></p>
 
 
 
@@ -945,6 +902,10 @@ Tujuannya: memastikan solusi AI aman, transparan, patuh hukum, dan bernilai bisn
     
     
       <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="assets/js/mermaid-init.js"></script>
       
     
   </body>

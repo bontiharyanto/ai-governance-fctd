@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://bontiharyanto.github.io/ai-governance-fctd/research/research-framework/">
+      
       
         <link rel="prev" href="../../references/">
       
@@ -43,6 +45,10 @@
       
     
     
+      <link rel="stylesheet" href="../../assets/css/mermaid-tweaks.css">
+    
+      <link rel="stylesheet" href="../../assets/css/overrides.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -62,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#research-framework-dppt-frameworks-regulasi" class="md-skip">
+        <a href="#diagram-mermaid" class="md-skip">
           Skip to content
         </a>
       
@@ -630,8 +636,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -664,8 +668,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -675,15 +677,6 @@
       
         <li class="md-nav__item">
   <a href="#diagram-mermaid" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagram (Mermaid)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#diagram-mermaid_1" class="md-nav__link">
     <span class="md-ellipsis">
       Diagram (Mermaid)
     </span>
@@ -769,32 +762,31 @@
 
 
 
-<h1 id="research-framework-dppt-frameworks-regulasi">🧭 Research Framework (DPPT ↔ Frameworks ↔ Regulasi)</h1>
-<p>Dokumen ini menampilkan diagram visual kerangka penelitian yang menyelaraskan <strong>DPPT</strong> dengan <strong>TOGAF, COBIT, NIST AI RMF</strong> dan <strong>UU PDP, POJK, STRANAS AI</strong>.</p>
+  <h1>Framework Diagram</h1>
+
 <h2 id="diagram-mermaid">Diagram (Mermaid)</h2>
-<h2 id="diagram-mermaid_1">Diagram (Mermaid)</h2>
-<pre><code class="language-mermaid">flowchart TD
+<pre class="mermaid"><code>flowchart TD
   %% ====== Groups ======
-  subgraph Drivers[&quot;External Drivers &amp; Standards&quot;]
-    A1[&quot;TOGAF&quot;]:::fw
-    A2[&quot;COBIT 2019&quot;]:::fw
-    A3[&quot;NIST AI RMF&quot;]:::fw
-    A4[&quot;UU PDP&quot;]:::reg
-    A5[&quot;POJK&quot;]:::reg
-    A6[&quot;STRANAS AI&quot;]:::reg
+  subgraph Drivers["External Drivers &amp; Standards"]
+    A1["TOGAF"]:::fw
+    A2["COBIT 2019"]:::fw
+    A3["NIST AI RMF"]:::fw
+    A4["UU PDP"]:::reg
+    A5["POJK"]:::reg
+    A6["STRANAS AI"]:::reg
   end
 
-  subgraph DPPT[&quot;DPPT Core&quot;]
-    D[&quot;DATA&quot;]:::pill
-    PR[&quot;PROCESS&quot;]:::pill
-    P[&quot;PEOPLE&quot;]:::pill
-    T[&quot;TECHNOLOGY&quot;]:::pill
-    PO[&quot;POLICY&quot;]:::pill
+  subgraph DPPT["DPPT Core"]
+    D["DATA"]:::pill
+    PR["PROCESS"]:::pill
+    P["PEOPLE"]:::pill
+    T["TECHNOLOGY"]:::pill
+    PO["POLICY"]:::pill
   end
 
-  subgraph Eval[&quot;Evaluation &amp; Outcomes&quot;]
-    E[&quot;Evaluation&lt;br/&gt;(NIST Metrics • COBIT Maturity • TOGAF Fit)&quot;]:::eval
-    O[&quot;Outcomes&lt;br/&gt;• AI Governance Maturity&lt;br/&gt;• Compliance Roadmap&lt;br/&gt;• Business Impact&quot;]:::out
+  subgraph Eval["Evaluation &amp; Outcomes"]
+    E["Evaluation (NIST Metrics • COBIT Maturity • TOGAF Fit)"]:::eval
+    O["Outcomes: AI Governance Maturity • Compliance Roadmap • Business Impact"]:::out
   end
 
   %% ====== Mappings ======
@@ -808,12 +800,15 @@
   D &amp; PR &amp; P &amp; T &amp; PO --&gt; E --&gt; O
 
   %% ====== Styles ======
-  classDef fw fill:#e8f1ff,stroke:#2f7de1,stroke-width:1.5px,color:#173b6b;
+  classDef fw  fill:#e8f1ff,stroke:#2f7de1,stroke-width:1.5px,color:#173b6b;
   classDef reg fill:#fff1e6,stroke:#e18a2f,stroke-width:1.5px,color:#5a3410;
   classDef pill fill:#eef8ef,stroke:#2ea44f,stroke-width:1.5px,color:#0f4d1f;
   classDef eval fill:#f5f0ff,stroke:#6e40c9,stroke-width:1.5px,color:#3b1d91;
   classDef out fill:#f0fbff,stroke:#0aa2c0,stroke-width:1.5px,color:#035766;
-</code></pre>
+
+  style Drivers rx:8, ry:8
+  style DPPT    rx:8, ry:8
+  style Eval    rx:8, ry:8</code></pre>
 
 
 
@@ -872,6 +867,10 @@
     
     
       <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../assets/js/mermaid-init.js"></script>
       
     
   </body>

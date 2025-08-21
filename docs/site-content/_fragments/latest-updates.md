@@ -1,14 +1,14 @@
 ## 🗓️ Latest Updates
 
-- 2025-08-21 — **ci: auto-deploy MkDocs to gh-pages on push**  
-  _by bontiharyanto_
-- 2025-08-20 — **docs: add CI & Pages status badges**  
-  _by bontiharyanto_
-- 2025-08-20 — **docs: sync site-content + add risk register placeholder**  
-  _by bontiharyanto_
-- 2025-08-20 — **ci: setup deploy to gh-pages**  
-  _by bontiharyanto_
-- 2025-08-20 — **ci: switch to gh-pages deployment**  
-  _by bontiharyanto_
+- 2025-08-21 — **docs: polished landing page with deploy badge & CTA buttons**  
+  _by github-actions[bot]_
+- 2025-08-21 — **docs: add landing page (index.md) for root URL**  
+  _by github-actions[bot]_
+- 2025-08-21 — **docs: add polished landing page (index.md)**  
+  _by github-actions[bot]_
+- 2025-08-21 — **chore: ignore mkdocs build output (docs/site)**  
+  _by github-actions[bot]_
+- 2025-08-21 — **docs(nav): remove stray Diagram (Mermaid) entry & tidy mkdocs config**  
+  _by github-actions[bot]_
 
 <sub>Generated on 2025-08-21</sub>
