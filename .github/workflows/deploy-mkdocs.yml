@@ -23,5 +23,5 @@
     publish_branch: gh-pages
     force_orphan: true
 
-- name: Show installed mkdocs packages
+    - name: Show installed mkdocs packages
   run: pip freeze | grep -i mkdocs || true
