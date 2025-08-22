@@ -4,60 +4,52 @@ on:
   push:
     branches: [ main ]
     paths:
-      - "docs/**"
-      - ".github/workflows/fctd-governance-ci.yml"
+      - 'docs/**'
+      - '.github/workflows/fctd-governance-ci.yml'
   workflow_dispatch:
-
-# Hindari job tumpang tindih
-concurrency:
-  group: "mkdocs-build-deploy"
-  cancel-in-progress: true
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1) Checkout
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 2) Setup Python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.12'
 
-      # 3) Install MkDocs + plugins (termasuk bibtex)
       - name: Install MkDocs + Material + BibTeX
         run: |
           python -m pip install --upgrade pip
           pip install \
             mkdocs==1.6.1 \
             mkdocs-material \
-            mkdocs-bibtex
-          # verifikasi plugin bibtex tersedia
+            mkdocs-bibtex \
+            pymdown-extensions
+
+      - name: Sanity check mkdocs_bibtex
+        run: |
           python - <<'PY'
-          import importlib, sys
-          assert importlib.util.find_spec("mkdocs_bibtex"), "mkdocs-bibtex not found"
-          print("mkdocs-bibtex OK")
+          import pkgutil
+          print("mkdocs_bibtex installed:", 'mkdocs_bibtex' in [m.name for m in pkgutil.iter_modules()])
           PY
 
-      # 4) Build site menggunakan config di docs/mkdocs.yml
       - name: Build site (docs/mkdocs.yml)
-        run: |
-          mkdocs build -f docs/mkdocs.yml
-        # Secara default akan menghasilkan folder output: docs/site
+        working-directory: docs
+        run: mkdocs build -f mkdocs.yml --strict
 
-      # 5) Deploy ke branch gh-pages
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/site
           publish_branch: gh-pages
-          publish_dir: docs/site
-          # opsional: custom domain kalau ada
-          # cname: example.com
+          force_orphan: true
