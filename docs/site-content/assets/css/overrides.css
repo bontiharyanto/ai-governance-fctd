@@ -1,1 +1,18 @@
-img[alt="Pages Deploy"] { display: none; }
+figure.img-block {
+  margin: 1rem 0 2rem;
+  text-align: center;
+}
+figure.img-block > img {
+  max-width: 920px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+figure.img-block > figcaption {
+  margin-top: .6rem;
+  color: var(--md-default-fg-color--light);
+  font-size: .85rem;
+  line-height: 1.35;
+  font-style: italic;
+}

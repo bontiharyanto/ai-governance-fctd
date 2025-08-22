@@ -1,57 +1,36 @@
-SHELL := /bin/zsh
-PATH := $(HOME)/.local/bin:$(PATH)
+# ==== Build & Deploy MkDocs ====
 
-MKDOCS ?= $(HOME)/.local/bin/mkdocs
-PORT ?= 9000
-MSG ?= "chore: update docs site"
+# Ubah variabel ini jika perlu
+PORT ?= 9011
+BASE_PORT ?= 9011
+MKDOCS ?= mkdocs               # atau override saat run: make serve MKDOCS=~/.local/bin/mkdocs
+MKCONF ?= docs/mkdocs.yml
 
-REMOTE_URL := $(shell git config --get remote.origin.url)
-OWNER := $(shell basename -s .git $$(dirname $(REMOTE_URL)))
-REPO  := $(shell basename -s .git $(REMOTE_URL))
-PAGES_URL := https://$(OWNER).github.io/$(REPO)/
+.PHONY: deploy serve serve-auto
 
-.PHONY: updates docs serve kill-port deploy gh-pages-open ship
+deploy:
+	@echo "🚀 Build & Deploy ke GitHub Pages..."
+	$(MKDOCS) build -f $(MKCONF)
+	$(MKDOCS) gh-deploy -f $(MKCONF) -b gh-pages --force
+	@echo "✅ Selesai! Cek: https://bontiharyanto.github.io/ai-governance-fctd/"
 
-updates:
-	python3 scripts/gen_updates.py
+# Kill bila port dipakai, lalu serve
+serve:
+	@port=$(PORT); \
+	if lsof -i :$$port -sTCP:LISTEN >/dev/null 2>&1; then \
+	  pid=$$(lsof -ti tcp:$$port); \
+	  echo "⚠️  Port $$port in use by PID $$pid — killing..."; \
+	  kill -9 $$pid || true; \
+	  sleep 1; \
+	fi; \
+	echo "🌐 Starting MkDocs on http://127.0.0.1:$$port"; \
+	$(MKDOCS) serve -f $(MKCONF) -a 127.0.0.1:$$port
 
-docs: updates
-	$(MKDOCS) build -f docs/mkdocs.yml
-
-serve: updates
-	$(MKDOCS) serve -f docs/mkdocs.yml -a 127.0.0.1:$(PORT)
-
-kill-port:
-	@echo "Killing process on port $(PORT) (if any)…"
-	-@lsof -ti :$(PORT) | xargs -r kill -9
-
-deploy: updates
-	@git add -A
-	@git commit -m "$(MSG)" || echo "⚠️  No changes to commit"
-	@git push origin main
-	@echo "✅ Docs pushed. GitHub Actions akan membangun & deploy ke Pages."
-
-gh-pages-open:
-	@echo "🌐 Opening $(PAGES_URL)"
-	@if [ "$$(uname -s)" = "Darwin" ]; then \
-		open "$(PAGES_URL)"; \
-	else \
-		( command -v xdg-open >/dev/null && xdg-open "$(PAGES_URL)" ) || echo "$(PAGES_URL)"; \
-	fi
-
-WAIT ?= 45
-ship: deploy
-	@echo "⏳ Menunggu $(WAIT) detik agar GitHub Actions build selesai..."
-	@sleep $(WAIT)
-	$(MAKE) gh-pages-open.PHONY: research
-research:
-	python tools/ai_analysis/survey_analysis.py --csv data/sample_survey.csv --out results_survey.json
-	python tools/ai_analysis/visualize_survey.py --csv data/sample_survey.csv --results results_survey.json --outdir reports
-	python tools/ai_analysis/reliability.py --csv data/sample_survey.csv --out reliability.json
-	~/.local/bin/mkdocs build -f docs/mkdocs.yml
-
-.PHONY: research-sync
-research-sync:
-	python tools/ai_analysis/sync_reports.py
-	~/.local/bin/mkdocs build -f docs/mkdocs.yml
-
+# Cari port kosong mulai dari BASE_PORT, lalu serve
+serve-auto:
+	@p=$(BASE_PORT); \
+	while lsof -i :$$p -sTCP:LISTEN >/dev/null 2>&1; do p=$$((p+1)); done; \
+	if [ $$p -gt 65535 ]; then echo "No free port ≤ 65535"; exit 1; fi; \
+	echo "🔎 Found free port: $$p"; \
+	echo "🌐 Starting MkDocs on http://127.0.0.1:$$p"; \
+	$(MKDOCS) serve -f $(MKCONF) -a 127.0.0.1:$$p

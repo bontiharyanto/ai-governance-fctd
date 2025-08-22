@@ -2,7 +2,6 @@ site_name: FCTD AI Governance
 site_url: https://bontiharyanto.github.io/ai-governance-fctd/
 docs_dir: site-content
 
-
 theme:
   name: material
   features:
@@ -11,6 +10,12 @@ theme:
     - search.suggest
     - content.code.copy
     - toc.integrate
+
+plugins:
+  - search
+  - bibtex:
+      # Path ini relatif terhadap file mkdocs.yml (jadi file .bib di folder "docs/")
+      bib_file: "references.bib"
 
 markdown_extensions:
   - admonition
@@ -32,7 +37,6 @@ extra_javascript:
 extra_css:
   - assets/css/mermaid-tweaks.css
   - assets/css/overrides.css
-
 
 nav:
   - Home: index.md

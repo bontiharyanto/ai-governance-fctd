@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#diagram-mermaid" class="md-skip">
+        <a href="#framework-diagram" class="md-skip">
           Skip to content
         </a>
       
@@ -636,6 +636,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -668,6 +670,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -676,9 +680,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#diagram-mermaid" class="md-nav__link">
+  <a href="#diagram-ringkas" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram (Mermaid)
+      🔎 Diagram Ringkas
     </span>
   </a>
   
@@ -762,53 +766,58 @@
 
 
 
-  <h1>Framework Diagram</h1>
+<h1 id="framework-diagram">📊 Framework Diagram</h1>
+<p>Framework ini mengikuti standar AI governance seperti NIST AI RMF [^NIST2023], TOGAF [^TOGAF2018], dan COBIT [^COBIT2019].
+Penerapan AI di Indonesia wajib selaras dengan UU PDP [^UUPDP2022], POJK [^POJK2016], dan STRANAS AI .</p>
+<h2 id="diagram-ringkas">🔎 Diagram Ringkas</h2>
+<p><pre class="mermaid"><code>flowchart TD
 
-<h2 id="diagram-mermaid">Diagram (Mermaid)</h2>
-<pre class="mermaid"><code>flowchart TD
   %% ====== Groups ======
   subgraph Drivers["External Drivers &amp; Standards"]
-    A1["TOGAF"]:::fw
-    A2["COBIT 2019"]:::fw
-    A3["NIST AI RMF"]:::fw
-    A4["UU PDP"]:::reg
-    A5["POJK"]:::reg
-    A6["STRANAS AI"]:::reg
+    A["TOGAF"]:::std
+    B["COBIT 2019"]:::std
+    C["NIST AI RMF"]:::std
+    U["UU PDP"]:::law
+    J["POJK"]:::law
+    S["STRANAS AI"]:::law
   end
 
-  subgraph DPPT["DPPT Core"]
+  subgraph Core["DPPT Core"]
     D["DATA"]:::pill
-    PR["PROCESS"]:::pill
-    P["PEOPLE"]:::pill
+    P["PROCESS"]:::pill
+    E["PEOPLE"]:::pill
     T["TECHNOLOGY"]:::pill
-    PO["POLICY"]:::pill
+    Y["POLICY"]:::pill
   end
 
   subgraph Eval["Evaluation &amp; Outcomes"]
-    E["Evaluation (NIST Metrics • COBIT Maturity • TOGAF Fit)"]:::eval
-    O["Outcomes: AI Governance Maturity • Compliance Roadmap • Business Impact"]:::out
+    V["Evaluation (NIST Metrics · COBIT Maturity · TOGAF Fit)"]:::eval
+    O["Outcomes: AI Governance Maturity · Compliance Roadmap · Business Impact"]:::out
   end
 
   %% ====== Mappings ======
-  A1 --&gt; D &amp; PR &amp; P &amp; T &amp; PO
-  A2 --&gt; D &amp; PR &amp; P &amp; T &amp; PO
-  A3 --&gt; D &amp; PR &amp; P &amp; T &amp; PO
-  A4 --&gt; D &amp; PO
-  A5 --&gt; PR &amp; T &amp; PO
-  A6 --&gt; P &amp; PO
+  A --&gt; D &amp; P &amp; E &amp; T &amp; Y
+  B --&gt; D &amp; P &amp; E &amp; T &amp; Y
+  C --&gt; D &amp; P &amp; E &amp; T &amp; Y
+  U --&gt; D &amp; Y
+  J --&gt; P &amp; T &amp; Y
+  S --&gt; P
 
-  D &amp; PR &amp; P &amp; T &amp; PO --&gt; E --&gt; O
+  D &amp; P &amp; E &amp; T &amp; Y --&gt; V --&gt; O
 
   %% ====== Styles ======
-  classDef fw  fill:#e8f1ff,stroke:#2f7de1,stroke-width:1.5px,color:#173b6b;
-  classDef reg fill:#fff1e6,stroke:#e18a2f,stroke-width:1.5px,color:#5a3410;
-  classDef pill fill:#eef8ef,stroke:#2ea44f,stroke-width:1.5px,color:#0f4d1f;
-  classDef eval fill:#f5f0ff,stroke:#6e40c9,stroke-width:1.5px,color:#3b1d91;
-  classDef out fill:#f0fbff,stroke:#0aa2c0,stroke-width:1.5px,color:#035766;
+  classDef std fill:#e8f1ff,stroke:#2f7de1,stroke-width:1.2px,color:#173b6b;
+  classDef law fill:#fff1e6,stroke:#e18a2f,stroke-width:1.2px,color:#5a3410;
+  classDef pill fill:#eef8ef,stroke:#2ea44f,stroke-width:1.2px,color:#0f4d1f;
+  classDef eval fill:#f5f0ff,stroke:#6e40c9,stroke-width:1.2px,color:#3b1d91;
+  classDef out fill:#f0fbff,stroke:#0aa2c0,stroke-width:1.2px,color:#035766;
 
-  style Drivers rx:8, ry:8
-  style DPPT    rx:8, ry:8
-  style Eval    rx:8, ry:8</code></pre>
+  style Drivers rx:8,ry:8
+  style Core    rx:8,ry:8
+  style Eval    rx:8,ry:8</code></pre>
+[^NIST2023]: National Institute of Standards and Technology. Artificial intelligence risk management framework (ai rmf 1.0). Technical Report, NIST, 2023.
+[^UUPDP2022]: Undang-undang republik indonesia nomor 27 tahun 2022 tentang perlindungan data pribadi. 2022.
+[^POJK2016]: Pojk no. 38/pojk.03/2016 – penerapan manajemen risiko dalam penggunaan ti oleh bank umum. 2016.</p>
 
 
 
