@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://bontiharyanto.github.io/ai-governance-fctd/controls/model-registry/">
+        <link rel="canonical" href="https://bontiharyanto.github.io/ai-governance-fctd/research/literature-review-framework/">
       
       
+        <link rel="prev" href="../research-framework/">
+      
+      
+        <link rel="next" href="../analytical-methods/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>📦 Kontrol Model Registry - FCTD AI Governance</title>
+        <title>Literature Review - FCTD AI Governance</title>
       
     
     
@@ -64,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kontrol-model-registry" class="md-skip">
+        <a href="#literature-review-strengths-and-weaknesses-of-ai-governance-frameworks" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              📦 Kontrol Model Registry
+              Literature Review
             
           </span>
         </div>
@@ -411,7 +415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prompt-management/" class="md-nav__link">
+      <a href="../../controls/prompt-management/" class="md-nav__link">
         
   
   
@@ -434,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pii-redaction/" class="md-nav__link">
+      <a href="../../controls/pii-redaction/" class="md-nav__link">
         
   
   
@@ -578,8 +582,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -590,11 +596,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
@@ -610,7 +616,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Research
@@ -624,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research/research-framework/" class="md-nav__link">
+      <a href="../research-framework/" class="md-nav__link">
         
   
   
@@ -644,10 +650,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../research/literature-review-framework/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Literature Review
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -658,6 +684,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#literature-review-strengths-and-weaknesses-of-ai-governance-frameworks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Literature Review: Strengths and Weaknesses of AI Governance Frameworks
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -670,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research/analytical-methods/" class="md-nav__link">
+      <a href="../analytical-methods/" class="md-nav__link">
         
   
   
@@ -693,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research/ai-toolkit/" class="md-nav__link">
+      <a href="../ai-toolkit/" class="md-nav__link">
         
   
   
@@ -716,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research/results/" class="md-nav__link">
+      <a href="../results/" class="md-nav__link">
         
   
   
@@ -755,25 +808,143 @@
 
 
 
-<h1 id="kontrol-model-registry">📦 Kontrol Model Registry</h1>
-<p>Model registry adalah repositori resmi untuk menyimpan versi model.</p>
-<h2 id="manfaat">Manfaat</h2>
-<ul>
-<li>Traceability (siapa buat model, kapan).  </li>
-<li>Reproducibility.  </li>
-<li>Integrasi dengan CI/CD pipeline.</li>
-</ul>
-<h2 id="framework-rujukan">Framework Rujukan</h2>
-<ul>
-<li>TOGAF ADM (Architecture Repository).  </li>
-<li>NIST AI RMF (Governance Function).  </li>
-</ul>
-<h2 id="implementasi">Implementasi</h2>
-<ul>
-<li>MLflow Model Registry.  </li>
-<li>Kubeflow / SageMaker registry.  </li>
-<li>Policy untuk promosi model dari <em>staging</em> → <em>production</em>.</li>
-</ul>
+  <h1>Literature Review</h1>
+
+<h3 id="literature-review-strengths-and-weaknesses-of-ai-governance-frameworks">Literature Review: Strengths and Weaknesses of AI Governance Frameworks</h3>
+<p>Tabel berikut merangkum fokus, kekuatan, dan kelemahan framework/regulasi yang menjadi rujukan penelitian.</p>
+<table>
+<thead>
+<tr>
+<th>Framework / Sumber</th>
+<th>Fokus</th>
+<th>Strengths (Kekuatan)</th>
+<th>Weaknesses (Kelemahan)</th>
+<th>Referensi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TOGAF 9.2 (The Open Group, 2018)</td>
+<td>Enterprise architecture &amp; alignment</td>
+<td>Struktur arsitektur enterprise yang komprehensif; kuat untuk alignment strategi bisnis–TI; mendukung governance lapis organisasi.</td>
+<td>Tidak spesifik AI; butuh perluasan untuk risiko model, bias, dan monitoring AI.</td>
+<td>(The Open Group, 2018)</td>
+</tr>
+<tr>
+<td>COBIT 2019 (ISACA, 2019)</td>
+<td>IT governance &amp; control maturity</td>
+<td>Model maturitas &amp; objektif pengendalian yang jelas; cocok untuk sektor keuangan &amp; audit.</td>
+<td>Tidak eksplisit membahas fairness, bias, dan explainability AI.</td>
+<td>(ISACA, 2019)</td>
+</tr>
+<tr>
+<td>NIST AI RMF 1.0 (NIST, 2023)</td>
+<td>AI risk management (Map–Measure–Manage–Govern)</td>
+<td>Berfokus pada risiko AI (robustness, bias, transparency, accountability); panduan praktis untuk trustworthiness.</td>
+<td>Bersifat general guideline; memerlukan adaptasi sektoral &amp; integrasi ke proses enterprise.</td>
+<td>(NIST, 2023)</td>
+</tr>
+<tr>
+<td>ISO/IEC 23894:2023</td>
+<td>AI risk management (ISO)</td>
+<td>Standar internasional formal untuk manajemen risiko AI; kompatibel dengan ISO 31000/27001.</td>
+<td>Implementasi membutuhkan kapabilitas dokumentasi &amp; audit yang matang.</td>
+<td>(ISO/IEC 23894:2023)</td>
+</tr>
+<tr>
+<td>ISO/IEC 42001:2023</td>
+<td>AI Management System (AIMS)</td>
+<td>Kerangka sistem manajemen khusus AI (mirip ISO 27001 untuk keamanan); mendorong PDCA &amp; continual improvement.</td>
+<td>Masih baru; adopsi dan tooling pendukung di organisasi perlu waktu.</td>
+<td>(ISO/IEC 42001:2023)</td>
+</tr>
+<tr>
+<td>OECD AI Principles (2019/2021)</td>
+<td>High‑level principles (human‑centric, fairness)</td>
+<td>Konsensus internasional; menekankan AI yang bertanggung jawab, inklusif, dan berorientasi manusia.</td>
+<td>Normatif dan high‑level; perlu operasionalisasi ke kontrol teknis &amp; proses.</td>
+<td>(OECD, 2019/2021)</td>
+</tr>
+<tr>
+<td>EU AI Act (Proposal 2021)</td>
+<td>Risk‑based regulation (EU)</td>
+<td>Pendekatan berbasis risiko; kewajiban untuk high‑risk AI (data, dokumentasi, post‑market monitoring).</td>
+<td>Kompleks untuk diadopsi penuh di luar UE; beban kepatuhan meningkat.</td>
+<td>(European Commission, 2021)</td>
+</tr>
+<tr>
+<td>IEEE 7000‑series (mis. 7001)</td>
+<td>Ethical transparency &amp; system engineering</td>
+<td>Pedoman rekayasa untuk transparansi &amp; persyaratan etika; melengkapi standar teknis.</td>
+<td>Fragmented; implementasi memerlukan interpretasi lintas seri standar.</td>
+<td>(IEEE 7001:2021)</td>
+</tr>
+<tr>
+<td>Model Cards</td>
+<td>Model reporting &amp; transparency</td>
+<td>Template praktis untuk dokumentasi model: tujuan, data, metrik; meningkatkan akuntabilitas.</td>
+<td>Bukan regulasi; perlu mandat governance agar konsisten diterapkan.</td>
+<td>(Mitchell et al., 2019)</td>
+</tr>
+<tr>
+<td>Datasheets for Datasets</td>
+<td>Dataset documentation &amp; provenance</td>
+<td>Dokumentasi dataset yang mendalam: asal, komposisi, etika; kurangi risiko bias &amp; misuse.</td>
+<td>Menambah effort dokumentasi; membutuhkan dukungan proses &amp; alat.</td>
+<td>(Gebru et al., 2021)</td>
+</tr>
+<tr>
+<td>UU PDP No.27/2022</td>
+<td>Data protection (ID)</td>
+<td>Dasar hukum perlindungan data di Indonesia; kewajiban pemrosesan data pribadi.</td>
+<td>Belum spesifik AI; butuh regulasi turunan &amp; pedoman sektoral.</td>
+<td>(DPR RI, 2022)</td>
+</tr>
+<tr>
+<td>POJK 38/2016</td>
+<td>IT risk mgmt (banking)</td>
+<td>Relevan untuk sektor keuangan; menuntut manajemen risiko TI yang ketat.</td>
+<td>Tidak eksplisit bahas risiko unik AI (model drift, explainability).</td>
+<td>(OJK, 2016)</td>
+</tr>
+<tr>
+<td>STRANAS AI 2020–2045</td>
+<td>National AI strategy (ID)</td>
+<td>Arah strategis nasional; dukung ekosistem, SDM, dan inovasi AI.</td>
+<td>High‑level; perlu turunan operasional untuk governance di organisasi.</td>
+<td>(Kemenristek/BRIN, 2020)</td>
+</tr>
+<tr>
+<td>NIST SP 800‑53 Rev.5</td>
+<td>Security &amp; privacy controls</td>
+<td>Kontrol keamanan &amp; privasi yang luas; landasan kuat untuk lingkungan AI aman.</td>
+<td>Tidak khusus AI; perlu pemetaan kontrol ke lifecycle AI.</td>
+<td>(NIST, 2020)</td>
+</tr>
+<tr>
+<td>SR 11‑7 (Fed)</td>
+<td>Model risk management (banking)</td>
+<td>Best practice internasional untuk governance model (validasi, monitoring, MRM).</td>
+<td>US‑centric; perlu adaptasi ke konteks regulasi Indonesia.</td>
+<td>(Federal Reserve, 2011)</td>
+</tr>
+<tr>
+<td>Microsoft Responsible AI Standard</td>
+<td>Industry practice (governance)</td>
+<td>Contoh operasionalisasi prinsip AI (fairness, reliability, privacy).</td>
+<td>Dokumen korporat; bukan standar/resmi regulator.</td>
+<td>(Microsoft, 2022)</td>
+</tr>
+<tr>
+<td>Google AI Principles</td>
+<td>Corporate principles</td>
+<td>Prinsip ringkas untuk etika &amp; penggunaan AI; mendorong budaya internal.</td>
+<td>Voluntary; tidak jadi kontrol audit formal tanpa governance tambahan.</td>
+<td>(Google, 2018)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Referensi Kunci:</strong> The Open Group (2018). TOGAF® Standard, Version 9.2.; ISACA (2019). COBIT® 2019 Framework: Governance and Management Objectives.; NIST (2023). Artificial Intelligence Risk Management Framework (AI RMF 1.0).; ISO/IEC (2023). 23894:2023 Artificial intelligence — Risk management.; ISO/IEC (2023). 42001:2023 Artificial intelligence management system (AIMS) — Requirements.; OECD (2019/2021). OECD Principles on AI.; European Commission (2021). Proposal for a Regulation laying down harmonised rules on AI (AI Act).; IEEE (2021). IEEE 7001‑2021: Transparency of Autonomous Systems.; Mitchell, M. et al. (2019). Model Cards for Model Reporting.; Gebru, T. et al. (2021). Datasheets for Datasets. CACM.; DPR RI (2022). UU No. 27 Tahun 2022 tentang Perlindungan Data Pribadi.; OJK (2016). POJK No. 38/POJK.03/2016.; Kemenristek/BRIN (2020). Strategi Nasional Kecerdasan Artifisial 2020–2045.; NIST (2020). SP 800‑53 Rev.5: Security and Privacy Controls.; Federal Reserve (2011). SR 11‑7: Model Risk Management.; Microsoft (2022). Responsible AI Standard.; Google (2018). AI Principles.</p>
 
 
 

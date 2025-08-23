@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://bontiharyanto.github.io/ai-governance-fctd/controls/model-registry/">
+        <link rel="canonical" href="https://bontiharyanto.github.io/ai-governance-fctd/research/research-frameworkbck/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>📦 Kontrol Model Registry - FCTD AI Governance</title>
+        <title>📊 Framework Diagram - FCTD AI Governance</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kontrol-model-registry" class="md-skip">
+        <a href="#framework-diagram" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              📦 Kontrol Model Registry
+              📊 Framework Diagram
             
           </span>
         </div>
@@ -411,7 +411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prompt-management/" class="md-nav__link">
+      <a href="../../controls/prompt-management/" class="md-nav__link">
         
   
   
@@ -434,7 +434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pii-redaction/" class="md-nav__link">
+      <a href="../../controls/pii-redaction/" class="md-nav__link">
         
   
   
@@ -624,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research/research-framework/" class="md-nav__link">
+      <a href="../research-framework/" class="md-nav__link">
         
   
   
@@ -647,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research/literature-review-framework/" class="md-nav__link">
+      <a href="../literature-review-framework/" class="md-nav__link">
         
   
   
@@ -670,7 +670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research/analytical-methods/" class="md-nav__link">
+      <a href="../analytical-methods/" class="md-nav__link">
         
   
   
@@ -693,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research/ai-toolkit/" class="md-nav__link">
+      <a href="../ai-toolkit/" class="md-nav__link">
         
   
   
@@ -716,7 +716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research/results/" class="md-nav__link">
+      <a href="../results/" class="md-nav__link">
         
   
   
@@ -755,25 +755,151 @@
 
 
 
-<h1 id="kontrol-model-registry">📦 Kontrol Model Registry</h1>
-<p>Model registry adalah repositori resmi untuk menyimpan versi model.</p>
-<h2 id="manfaat">Manfaat</h2>
+<h1 id="framework-diagram">📊 Framework Diagram</h1>
+<p>Framework ini mengikuti standar AI governance seperti <strong>NIST AI RMF</strong> [^NIST2023], <strong>TOGAF</strong> [^TOGAF2018], dan <strong>COBIT</strong> [^COBIT2019].<br />
+Penerapan AI di Indonesia wajib selaras dengan <strong>UU PDP</strong> [^UUPDP2022], <strong>POJK</strong> [^POJK2016], dan <strong>STRANAS AI</strong> [^STRANASAI].</p>
+<hr />
+<h2 id="1-latar-belakang-rasional">🎯 1. Latar Belakang &amp; Rasional</h2>
+<p>Kerangka ini menggabungkan <strong>DPPT</strong> (Data, Process, People, Technology, Policy) dengan <strong>TOGAF</strong>, <strong>COBIT 2019</strong>, <strong>NIST AI RMF</strong>, serta <strong>UU PDP / POJK / STRANAS AI</strong> untuk memastikan tata kelola AI yang <strong>selaras tujuan bisnis, terukur risikonya, dan patuh regulasi</strong>. Tujuan riset: membuktikan bahwa alignment lintas-kerangka menaikkan <strong>governance maturity</strong>, <strong>compliance readiness</strong>, dan <strong>business impact</strong>.</p>
+<h2 id="2-pertanyaan-riset">❓ 2. Pertanyaan Riset</h2>
+<p>1) Seberapa fit kapabilitas <strong>DPPT</strong> terhadap kontrol/objektif <strong>TOGAF/COBIT/NIST</strong>?<br />
+2) Bagaimana alignment tersebut memetakan persyaratan <strong>UU PDP/POJK/STRANAS</strong>?<br />
+3) Apakah alignment &amp; kapabilitas <strong>DPPT</strong> berkorelasi dengan <strong>business impact</strong> dan penurunan risiko?</p>
+<h2 id="3-model-konseptual">🧩 3. Model Konseptual</h2>
+<p><strong>Input/Drivers:</strong> standar &amp; regulasi (TOGAF/COBIT/NIST/UU PDP/POJK/STRANAS).<br />
+<strong>Kapabilitas Inti (DPPT):</strong> kualitas data, maturitas proses, kompetensi &amp; budaya, kesiapan teknologi, dan kebijakan.<br />
+<strong>Mekanisme Tata Kelola:</strong> arsitektur &amp; portofolio (<strong>TOGAF</strong>), objective <strong>COBIT</strong>, fungsi <strong>NIST AI RMF</strong> (Govern/Map/Measure/Manage).<br />
+<strong>Outcome:</strong> AI Governance Maturity, Compliance Readiness, Business Impact.</p>
+<h2 id="4-pemetaan-dppt-kerangka-regulasi-ringkas">🔗 4. Pemetaan DPPT × Kerangka × Regulasi (Ringkas)</h2>
+<table>
+<thead>
+<tr>
+<th>DPPT</th>
+<th>TOGAF (ADM/Domain)</th>
+<th>COBIT 2019 (contoh)</th>
+<th>NIST AI RMF (fungsi)</th>
+<th>Regulasi (contoh)</th>
+<th>Evidence kunci</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data</strong></td>
+<td>Data Architecture; ADM B/C</td>
+<td>APO14 (Data Mgmt), APO03, BAI03</td>
+<td>Map (context), Measure (data quality/bias)</td>
+<td>UU PDP (lawful basis, minimization), POJK (data governance)</td>
+<td>Data catalog, lineage, DQ KPI, DPIA, RoPA</td>
+</tr>
+<tr>
+<td><strong>Process</strong></td>
+<td>Business Architecture; Req Mgmt; Gov (Ph G)</td>
+<td>APO01, BAI02/03, DSS01</td>
+<td>Manage (mitigation), Govern (policies)</td>
+<td>POJK MR (ERM &amp; IT Risk), UU PDP (privacy by design)</td>
+<td>SOP, AI risk register, change/release, incident/DR</td>
+</tr>
+<tr>
+<td><strong>People</strong></td>
+<td>Org Change Mgmt (G/H), Stakeholder Mgmt</td>
+<td>APO07 (HR), APO01 (Roles), MEA</td>
+<td>Govern (roles), Map (stakeholders)</td>
+<td>STRANAS AI (talenta), UU PDP (pelatihan PII)</td>
+<td>RACI, Komite AI, pelatihan, CoE</td>
+</tr>
+<tr>
+<td><strong>Technology</strong></td>
+<td>Tech Architecture; SBB</td>
+<td>BAI06 (Change), DSS05 (Security), APO12 (Risk)</td>
+<td>Measure (model eval), Manage (controls)</td>
+<td>POJK TIK (security/reliability), UU PDP (security)</td>
+<td>Model cards, eval reports, MLOps, security controls</td>
+</tr>
+<tr>
+<td><strong>Policy</strong></td>
+<td>Architecture Governance; Compliance</td>
+<td>EDM01–03, APO13, MEA</td>
+<td>Govern (policy/process), Manage (controls)</td>
+<td>UU PDP (DPO, kebijakan PII), POJK (kebijakan TI/risiko)</td>
+<td>AI/Data policy, DPIA std, retention, audit trail</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Intinya: <strong>DPPT = kapabilitas</strong>; <strong>TOGAF/COBIT/NIST = mekanisme &amp; kontrol</strong>; <strong>regulasi = constraint</strong> yang wajib dipenuhi.</p>
+</blockquote>
+<h2 id="5-prinsip-tata-kelola-policy-layer">🧭 5. Prinsip Tata Kelola (Policy Layer)</h2>
+<p>Lawfulness &amp; Transparency; Risk-based &amp; Proportional; Accountability (three lines of defense); Privacy &amp; Security by Design; Fairness &amp; Robustness; Auditability.</p>
+<h2 id="6-struktur-organisasi-raci-ringkas">🏢 6. Struktur Organisasi &amp; RACI (ringkas)</h2>
 <ul>
-<li>Traceability (siapa buat model, kapan).  </li>
-<li>Reproducibility.  </li>
-<li>Integrasi dengan CI/CD pipeline.</li>
+<li><strong>Board/Komite</strong> → EDM (arah &amp; oversight).  </li>
+<li><strong>CIO/CTO/CDAO</strong> → APO/BAI/DSS (kebijakan–arsitektur–eksekusi).  </li>
+<li><strong>Head of AI/ML</strong> → lifecycle (Map/Measure/Manage).  </li>
+<li><strong>DPO/Legal/Compliance</strong> → UU PDP (DPIA, RoPA, kontrak).  </li>
+<li><strong>CISO/SecOps</strong> → security &amp; incident response; <strong>Audit Internal</strong> → MEA.</li>
 </ul>
-<h2 id="framework-rujukan">Framework Rujukan</h2>
-<ul>
-<li>TOGAF ADM (Architecture Repository).  </li>
-<li>NIST AI RMF (Governance Function).  </li>
-</ul>
-<h2 id="implementasi">Implementasi</h2>
-<ul>
-<li>MLflow Model Registry.  </li>
-<li>Kubeflow / SageMaker registry.  </li>
-<li>Policy untuk promosi model dari <em>staging</em> → <em>production</em>.</li>
-</ul>
+<p>Contoh RACI: <strong>DPIA</strong> (R=DPO/Legal, A=CDAO), <strong>Model Release</strong> (R=Head of AI, A=CTO), <strong>Incident</strong> (R=CISO, A=CIO).</p>
+<h2 id="7-proses-siklus-hidup-selaras-nist-ai-rmf">🔄 7. Proses Siklus Hidup (selaras NIST AI RMF)</h2>
+<p>Inisiasi &amp; Mapping → Desain &amp; Data → Pengembangan &amp; Evaluasi → Persetujuan &amp; Rilis → Operasi &amp; Monitoring → Review &amp; Retire.<br />
+Tiap fase dirujukkan ke <strong>TOGAF ADM</strong>, <strong>COBIT</strong>, dan fungsi <strong>NIST</strong> (G/M/M/M).</p>
+<h2 id="8-metrik-evidensi">📏 8. Metrik &amp; Evidensi</h2>
+<p>Data (completeness/accuracy/imbalance), Process (SLA change/release, temuan audit), People (coverage pelatihan/role), Technology (RMSE/MAE/R², drift), Policy (jumlah DPIA, exceptions).<br />
+<strong>Outcome KPI:</strong> AI Governance Maturity, Compliance Readiness, Business Impact.</p>
+<h2 id="9-hipotesis">🧪 9. Hipotesis</h2>
+<p>H1: DPPT ↗ → AI Governance Maturity ↗.<br />
+H2: Pemetaan DPPT↔NIST menurunkan AI Risk &amp; meningkatkan Compliance Readiness.<br />
+H3: Governance Maturity ↗ → Business Impact ↗.<br />
+H4: Regulatory fit memperkuat pengaruh DPPT terhadap outcome.</p>
+<h2 id="10-rencana-operasionalisasi">🛠️ 10. Rencana Operasionalisasi</h2>
+<p>Instrumen (readiness DPPT, checklist compliance, log MLOps), skala Likert 1–5, analitik (clustering, regresi, uji beda, reliabilitas α, k-fold), serta evidensi (model card, DPIA, kebijakan, SOP, artefak audit/monitoring).</p>
+<hr />
+<h2 id="diagram-mermaid">🗺️ Diagram (Mermaid)</h2>
+<p><pre class="mermaid"><code>flowchart TD
+  subgraph Drivers["External Drivers &amp; Standards"]
+    A["TOGAF"]:::std
+    B["COBIT 2019"]:::std
+    C["NIST AI RMF"]:::std
+    U["UU PDP"]:::law
+    J["POJK"]:::law
+    S["STRANAS AI"]:::law
+  end
+
+  subgraph Core["DPPT Core"]
+    D["DATA"]:::pill
+    P["PROCESS"]:::pill
+    E["PEOPLE"]:::pill
+    T["TECHNOLOGY"]:::pill
+    Y["POLICY"]:::pill
+  end
+
+  subgraph Eval["Evaluation &amp; Outcomes"]
+    V["Evaluation (NIST Metrics · COBIT Maturity · TOGAF Fit)"]:::eval
+    O["Outcomes: AI Governance Maturity · Compliance Roadmap · Business Impact"]:::out
+  end
+
+  A --&gt; D &amp; P &amp; E &amp; T &amp; Y
+  B --&gt; D &amp; P &amp; E &amp; T &amp; Y
+  C --&gt; D &amp; P &amp; E &amp; T &amp; Y
+  U --&gt; D &amp; Y
+  J --&gt; P &amp; T &amp; Y
+  S --&gt; P
+  D &amp; P &amp; E &amp; T &amp; Y --&gt; V --&gt; O
+
+  classDef std  fill:#e8f1ff,stroke:#2f7de1,stroke-width:1.2px,color:#173b6b;
+  classDef law  fill:#fff1e6,stroke:#e18a2f,stroke-width:1.2px,color:#5a3410;
+  classDef pill fill:#eef8ef,stroke:#2ea44f,stroke-width:1.2px,color:#0f4d1f;
+  classDef eval fill:#f5f0ff,stroke:#6e40c9,stroke-width:1.2px,color:#3b1d91;
+  classDef out  fill:#f0fbff,stroke:#0aa2c0,stroke-width:1.2px,color:#035766;
+
+  style Drivers rx:8,ry:8
+  style Core    rx:8,ry:8
+  style Eval    rx:8,ry:8</code></pre>
+[^NIST2023]: National Institute of Standards and Technology. Artificial intelligence risk management framework (ai rmf 1.0). Technical Report, U.S. Department of Commerce, 2023. URL: <a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf">https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf</a>.
+[^TOGAF2018]: The Open Group. <em>TOGAF Standard, Version 9.2</em>. The Open Group, 2018. ISBN 9789401802838.
+[^COBIT2019]: ISACA. <em>COBIT 2019 Framework: Governance and Management Objectives</em>. ISACA, 2019. ISBN 9781604207952.
+[^UUPDP2022]: Republik Indonesia. Undang-undang republik indonesia nomor 27 tahun 2022 tentang perlindungan data pribadi. Lembaran Negara Republik Indonesia Tahun 2022 Nomor 263, 2022.
+[^POJK2016]: Otoritas Jasa Keuangan. Pojk no. 38/pojk.03/2016 – manajemen risiko penggunaan teknologi informasi oleh bank umum. Peraturan Otoritas Jasa Keuangan Republik Indonesia, 2016.
+[^STRANASAI]: Kementerian Riset dan Teknologi/Badan Riset dan Inovasi Nasional. Strategi nasional kecerdasan artifisial indonesia 2020–2045. Dokumen Kebijakan Nasional, 2020. URL: <a href="https://ai-innovation.id/stranasai">https://ai-innovation.id/stranasai</a>.</p>
 
 
 
