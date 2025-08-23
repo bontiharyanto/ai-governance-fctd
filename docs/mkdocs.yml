@@ -2,6 +2,12 @@ site_name: FCTD AI Governance
 site_url: https://bontiharyanto.github.io/ai-governance-fctd/
 docs_dir: site-content
 
+plugins:
+  - search
+  - bibtex:
+      bib_file: "site-content/references_all.bib"
+
+
 theme:
   name: material
   features:
@@ -10,13 +16,6 @@ theme:
     - search.suggest
     - content.code.copy
     - toc.integrate
-
-plugins:
-  - search
-  - bibtex:
-      # Path ini relatif terhadap file mkdocs.yml (jadi file .bib di folder "docs/")
-      bib_file: "references_full.bib"
-
 
 markdown_extensions:
   - admonition
@@ -41,28 +40,70 @@ extra_css:
 
 nav:
   - Home: index.md
+
   - Governance:
       - Principles: governance/principles.md
+      - Operating Model: governance/operating-model.md
+      - Roles & Responsibilities: governance/roles-and-responsibilities.md
+
   - Risk:
       - Risk Register: risk/risk-register.md
+      - Data Leakage: risk/risks/data-leakage.md
+      - Hallucination: risk/risks/hallucination.md
+      - Model Drift: risk/risks/model-drift.md
+
   - Controls:
       - Prompt Management: controls/prompt-management.md
       - PII Redaction: controls/pii-redaction.md
+      - Human-in-the-loop: risk/controls/human-in-the-loop.md
+      - Model Registry: controls/model-registry.md
+      - Explainability: controls/explainability.md
+      - Audit Trail: controls/audit-trail.md
+
   - Compliance:
       - FINOS Alignment: compliance/finos-alignment.md
       - NIST-FINOS-DPPT Crosswalk: compliance/crosswalk-nist-finos-dppt.md
+      - Regulatory Mapping: compliance/regulatory-mapping.md
+      - Third-Party Assessment: third-party-assessment.md
+
   - Thesis:
-      - Bab 1 - Pendahuluan: thesis/ch1-introduction.md
-      - Bab 2 - Tinjauan Pustaka: thesis/ch2-literature-review.md
-      - Bab 3 - Metodologi: thesis/ch3-methodology.md
+      - Bab 1 - Pendahuluan: thesis/bab1-introduction.md
+      - Bab 2 - Tinjauan Pustaka: thesis/bab2-literature-review.md
+      - Bab 3 - Metodologi: thesis/bab3-methodology.md
+      - Bab 4 - Hasil & Pembahasan: thesis/bab4-results-discussion.md
+      - Bab 5 - Kesimpulan & Rekomendasi: thesis/bab5-conclusion.md
 
   - Lifecycle:
       - AI Lifecycle: lifecycle/ai-lifecycle.md
+      - Data Governance: lifecycle/data-governance.md
+      - Model Development: lifecycle/model-development.md
+      - Evaluation: lifecycle/evaluation.md
+      - Deployment: lifecycle/deployment.md
+      - Monitoring: lifecycle/monitoring.md
+      - Retraining Pipeline: lifecycle/retraining-pipeline.md
+      - Rollback Plan: lifecycle/rollback-plan.md
+      - Model Card (Generic): lifecycle/model-card.md
+
   - Roadmap: roadmap.md
+
   - References: references.md
+
   - Research:
       - Framework Diagram: research/research-framework.md
-      - Literature Review: research/literature-review-framework.md
-      - Analytical Methods: research/analytical-methods.md
+      - Diagram (Mermaid): research/diagram-mermaid.md
       - AI Toolkit: research/ai-toolkit.md
       - Results: research/results.md
+
+  - Templates:
+      - AI Impact Assessment (AIA): templates/ai-impact-assessment-template.md
+      - Data Protection Impact Assessment (DPIA): templates/dpia-template.md
+      - Model Card: templates/model-card-template.md
+      - Datasheet: templates/datasheet-template.md
+      - Red Teaming Report: templates/red-teaming-report.md
+
+  - Examples:
+      - Bank Credit Scoring:
+          - AIA (Example): examples/bank-credit-scoring/aia-example.md
+          - DPIA (Example): examples/bank-credit-scoring/dpia-example.md
+          - Model Card (Example): examples/bank-credit-scoring/model-card-example.md
+          - Datasheet (Example): examples/bank-credit-scoring/datasheet-example.md
