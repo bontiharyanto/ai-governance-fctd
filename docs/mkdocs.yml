@@ -15,7 +15,8 @@ plugins:
   - search
   - bibtex:
       # Path ini relatif terhadap file mkdocs.yml (jadi file .bib di folder "docs/")
-      bib_file: "references.bib"
+      bib_file: "references_full.bib"
+
 
 markdown_extensions:
   - admonition
@@ -53,5 +54,7 @@ nav:
   - References: references.md
   - Research:
       - Framework Diagram: research/research-framework.md
+      - Literature Review: research/literature-review-framework.md
+      - Analytical Methods: research/analytical-methods.md
       - AI Toolkit: research/ai-toolkit.md
       - Results: research/results.md

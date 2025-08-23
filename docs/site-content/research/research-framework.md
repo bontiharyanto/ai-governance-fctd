@@ -59,6 +59,3 @@ flowchart TD
   style Core    rx:8,ry:8
   style Eval    rx:8,ry:8
 ```
-
-## Referensi
-\full_bibliography
