@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://bontiharyanto.github.io/ai-governance-fctd/risk/model-drift/">
+        <link rel="canonical" href="https://bontiharyanto.github.io/ai-governance-fctd/compliance/crosswalk-nist-finos-dppt/">
       
       
+        <link rel="prev" href="../finos-alignment/">
+      
+      
+        <link rel="next" href="../../thesis/ch1-introduction/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>📉 Risiko Model Drift - FCTD AI Governance</title>
+        <title>NIST-FINOS-DPPT Crosswalk - FCTD AI Governance</title>
       
     
     
@@ -64,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#risiko-model-drift" class="md-skip">
+        <a href="#crosswalk-nist-ai-rmf-finos-dppt" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              📉 Risiko Model Drift
+              NIST-FINOS-DPPT Crosswalk
             
           </span>
         </div>
@@ -338,7 +342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../risk-register/" class="md-nav__link">
+      <a href="../../risk/risk-register/" class="md-nav__link">
         
   
   
@@ -461,8 +465,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -473,11 +479,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -493,7 +499,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Compliance
@@ -507,7 +513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../compliance/finos-alignment/" class="md-nav__link">
+      <a href="../finos-alignment/" class="md-nav__link">
         
   
   
@@ -527,10 +533,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../compliance/crosswalk-nist-finos-dppt/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -541,6 +556,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -970,24 +986,48 @@
 
 
 
-<h1 id="risiko-model-drift">📉 Risiko Model Drift</h1>
-<p>Model drift terjadi saat performa model menurun karena perubahan distribusi data.</p>
-<h2 id="dampak">Dampak</h2>
-<ul>
-<li>Prediksi bias / tidak relevan.</li>
-<li>Kerugian finansial.</li>
-</ul>
-<h2 id="framework-rujukan">Framework Rujukan</h2>
-<ul>
-<li>NIST AI RMF (Monitoring).  </li>
-<li>COBIT MEA01 (Performance &amp; Conformance Monitoring).  </li>
-</ul>
-<h2 id="mitigasi">Mitigasi</h2>
-<ul>
-<li>Retraining pipeline reguler.  </li>
-<li>Data drift detection tools.  </li>
-<li>SLA untuk monitoring performa.</li>
-</ul>
+<h1 id="crosswalk-nist-ai-rmf-finos-dppt">🧭 Crosswalk NIST AI RMF ↔ FINOS ↔ DPPT</h1>
+<table>
+<thead>
+<tr>
+<th>NIST AI RMF</th>
+<th>Makna</th>
+<th>Domain FINOS (umum)</th>
+<th>DPPT</th>
+<th>Artefak Utama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Govern</strong></td>
+<td>Tata kelola, kebijakan, peran</td>
+<td>Governance, Policies, Third-party</td>
+<td>Policy, People</td>
+<td>Charter, kebijakan, RACI, SLA</td>
+</tr>
+<tr>
+<td><strong>Map</strong></td>
+<td>Konteks sistem, data, dampak</td>
+<td>Data Governance, Lifecycle</td>
+<td>Data, Process</td>
+<td>AIA/DPIA, datasheet, DDP</td>
+</tr>
+<tr>
+<td><strong>Measure</strong></td>
+<td>Evaluasi, metrik risiko/kinerja</td>
+<td>Testing, Transparency</td>
+<td>Technology, Process</td>
+<td>Bias/robustness test, model card</td>
+</tr>
+<tr>
+<td><strong>Manage</strong></td>
+<td>Mitigasi, operasi berkelanjutan</td>
+<td>Operations, Security &amp; Privacy</td>
+<td>Technology, Process, Policy</td>
+<td>Monitoring, incident log, rollback</td>
+</tr>
+</tbody>
+</table>
 
 
 
