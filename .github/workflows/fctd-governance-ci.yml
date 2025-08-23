@@ -1,4 +1,4 @@
-name: ci: mkdocs build (docs/mkdocs.yml)
+name: "ci: mkdocs build (docs/mkdocs.yml)"
 
 on:
   push:
