@@ -48,6 +48,14 @@ nav:
   - Controls:
       - Prompt Management: controls/prompt-management.md
       - PII Redaction: controls/pii-redaction.md
+  - Compliance:
+      - FINOS Alignment: compliance/finos-alignment.md
+      - NIST-FINOS-DPPT Crosswalk: compliance/crosswalk-nist-finos-dppt.md
+  - Thesis:
+      - Bab 1 - Pendahuluan: thesis/ch1-introduction.md
+      - Bab 2 - Tinjauan Pustaka: thesis/ch2-literature-review.md
+      - Bab 3 - Metodologi: thesis/ch3-methodology.md
+
   - Lifecycle:
       - AI Lifecycle: lifecycle/ai-lifecycle.md
   - Roadmap: roadmap.md
