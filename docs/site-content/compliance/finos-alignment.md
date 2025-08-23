@@ -40,3 +40,15 @@ Halaman ini memetakan kerangka **FCTD (DPPT)** ke domain-domain yang umum diadop
 - Red-Teaming / Adversarial test report  
 - Audit trail & change log (CI/CD)  
 - Bukti training & kompetensi peran kritikal  
+
+
+[AI Impact Assessment (AIA)](../templates/ai-impact-assessment-template.md)
+[DPIA](../templates/dpia-template.md)
+[Model Card](../templates/model-card-template.md)
+[Datasheet](../templates/datasheet-template.md)
+
+[Contoh AIA (Bank)](../examples/bank-credit-scoring/aia-example.md)
+[Contoh DPIA (Bank)](../examples/bank-credit-scoring/dpia-example.md)
+[Contoh Model Card (Bank)](../examples/bank-credit-scoring/model-card-example.md)
+[Contoh Datasheet (Bank)](../examples/bank-credit-scoring/datasheet-example.md)
+
