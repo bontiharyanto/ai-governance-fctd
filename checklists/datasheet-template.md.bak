@@ -1,0 +1,37 @@
+# Datasheet — Template (Untuk Dataset)
+
+## 1. Metadata
+- Nama dataset, versi, pemilik
+- Lisensi, hak cipta, batasan penggunaan
+- Tanggal rilis & periode data
+
+## 2. Asal & Kualitas
+- Sumber data (internal/eksternal/sintetik)
+- Proses akuisisi & validasi
+- Nilai hilang/outlier & penanganannya
+
+## 3. Atribut
+| Kolom | Tipe | Sensitif (Y/N) | Deskripsi | Retensi |
+|---|---|---|---|---|
+|  |  |  |  |  |
+
+## 4. Privacy & Legal
+- Dasar hukum pemrosesan
+- Consent/notice
+- Pseudonimisasi/anonimisasi
+
+## 5. Penggunaan yang Disarankan & Batasan
+- Intended use
+- Constraints/larangan
+
+## 6. Crosswalk Kontrol → Evidence → Metrik
+| Kontrol | Evidence | Metrik |
+|---|---|---|
+| Katalog data | Entri data catalog | 100% dataset tercatat |
+| Klasifikasi | Label sensitif | 100% kolom berlabel |
+| Retensi | Kebijakan + bukti purge | 0% data > retensi |
+| Hak subjek | Proses SAR | SLA respons < X hari |
+
+## 7. Kontak
+- Data Owner:
+- DPO/Legal:

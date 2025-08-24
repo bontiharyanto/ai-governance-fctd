@@ -1,0 +1,50 @@
+# 🌐 Prinsip Tata Kelola AI
+
+Tata kelola AI yang efektif harus menyeimbangkan **inovasi bisnis** dengan **kepatuhan hukum dan etika**.  
+Framework FCTD mengadopsi prinsip-prinsip dari **NIST AI RMF**, **COBIT 2019**, dan **TOGAF**, sekaligus menyesuaikan dengan regulasi Indonesia (UU PDP, POJK, STRANAS AI).
+
+---
+
+## 🧭 Prinsip Utama
+
+1. **Transparansi & Akuntabilitas**
+   - Dokumentasi jelas (Model Card, Datasheet).
+   - Audit trail & explainability wajib tersedia.
+   - Contoh bukti: *Model Card, Audit Report.*
+
+2. **Keamanan & Keandalan**
+   - Sistem AI harus tahan terhadap serangan (*adversarial attack*) dan menjaga reliabilitas.
+   - Contoh bukti: *Red Teaming Report, Monitoring Dashboard.*
+
+3. **Privasi & Perlindungan Data**
+   - Sesuai dengan **UU PDP 2022**, perusahaan wajib melakukan **DPIA**.
+   - Contoh bukti: *DPIA Report, Data Anonymization Record.*
+
+4. **Keadilan & Non-diskriminasi**
+   - Model harus diuji bias & fairness secara berkala.
+   - Contoh bukti: *Fairness Test Report.*
+
+5. **Kepatuhan Regulasi & Etika**
+   - Mengikuti standar lokal (POJK, STRANAS AI) dan internasional (OECD, EU AI Act draft).
+   - Contoh bukti: *Regulatory Mapping Document.*
+
+---
+
+## 📊 Crosswalk Prinsip → Evidence → Metrik
+
+| Prinsip                     | Evidence / Bukti                   | Metrik Evaluasi              |
+|------------------------------|------------------------------------|-------------------------------|
+| Transparansi & Akuntabilitas | Model Card, Audit Trail, Explainability Report | % coverage dokumentasi, jumlah audit sukses |
+| Keamanan & Keandalan         | Red Teaming Report, Monitoring     | MTTR (Mean Time To Recovery), incident count |
+| Privasi & Data Protection    | DPIA, Anonymization Record         | # data breach, hasil compliance check |
+| Keadilan & Non-diskriminasi  | Fairness Test Report               | Bias score, disparate impact ratio |
+| Kepatuhan Regulasi & Etika   | Regulatory Mapping, Compliance Assessment | Compliance maturity level |
+
+---
+
+📖 **Referensi**:  
+- NIST (2023). *AI Risk Management Framework (AI RMF 1.0).*  
+- ISACA (2019). *COBIT 2019 Framework.*  
+- The Open Group (2018). *TOGAF Standard, v9.2.*  
+- Pemerintah Indonesia (2022). *UU No. 27 Perlindungan Data Pribadi.*  
+- OJK (2016). *POJK No. 38/POJK.03/2016.*  

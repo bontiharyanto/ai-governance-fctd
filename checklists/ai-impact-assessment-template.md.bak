@@ -1,0 +1,81 @@
+# AI Impact Assessment (AIA) — Template
+
+!!! info "Tujuan"
+    Menilai dampak, risiko, dan kontrol tata kelola AI sebelum/pada saat/pasca implementasi.
+
+## 1. Ringkasan Use Case
+- Nama sistem/model:
+- Tujuan bisnis & KPI:
+- Pemilik proses / penanggung jawab:
+- Kategori data (PII/non-PII), sumber data, wilayah:
+- Kategori risiko (operasional, kepatuhan, etis, keamanan):
+
+## 2. Konteks & Lingkup
+- Domain (banking/fintech/health/IT, dll)
+- Sistem terkait (upstream/downstream)
+- Boundary (on-prem / cloud; region data residency)
+
+## 3. Klasifikasi Risiko & Dampak
+| Aspek | Deskripsi | Level (Low/Med/High) | Catatan |
+|---|---|---:|---|
+| Privacy/PII |  |  |  |
+| Bias & fairness |  |  |  |
+| Keamanan model & data |  |  |  |
+| Keandalan/robustness |  |  |  |
+| Kepatuhan (UU PDP, POJK, Stranas AI) |  |  |  |
+| Dampak bisnis & reputasi |  |  |  |
+
+## 4. Data Governance (D dari DPPT)
+- Sumber data & legal basis (consent/contract/legitimate interest)
+- Data lineage, kualitas, retensi, minimization
+- Prosedur anonimisasi/pseudonimisasi (jika ada)
+
+## 5. Process (P dari DPPT)
+- Alur proses (from ideation → deployment → monitoring)
+- SOC2/ISO/COBIT control yang relevan
+- Keterlibatan three lines of defense
+
+## 6. People
+- Roles & responsibilities (model owner, data owner, risk, legal, DPO)
+- Pelatihan & kompetensi (bias, keamanan, privacy by design)
+
+## 7. Technology
+- Arsitektur (on-prem/cloud; komponen; integrasi)
+- Keamanan: akses kunci, enkripsi, secret mgmt, audit log
+- Observability: logging, tracing, cost/usage guardrails
+
+## 8. Model Governance
+- Tipe model (ML tradisional/LLM/RAG/GenAI)
+- Dataset & dokumentasi (Datasheet, Model Card)
+- Evaluasi (akurasi, fairness, drift, red teaming)
+- Rencana retraining/rollback
+
+## 9. Kepatuhan & Regulasi
+- **UU PDP**: dasar pemrosesan, hak subjek data, DPA/DPIA
+- **POJK** (jika perbankan): manajemen risiko TI, outsourcing/cloud
+- **Stranas AI**: prinsip etik, akuntabilitas, transparansi
+- **NIST AI RMF**: Map–Measure–Manage–Govern
+- **COBIT/TOGAF**: alignment tata kelola & arsitektur
+
+## 10. Crosswalk Kontrol → Evidence → Metrik
+| Domain | Kontrol (referensi) | Evidence (bukti siap audit) | Metrik/Kriteria lulus |
+|---|---|---|---|
+| Data | Data inventory, data minimization (UU PDP, NIST) | Data catalog, DPA, retensi policy | % kolom sensitif termask/hashed |
+| Process | Change mgmt, approvals (COBIT/ISO) | RFC, RACI, SoD | SLA persetujuan ≤ X hari |
+| People | Pelatihan & akses | Bukti training, matriks akses | % staf selesai training; no orphan access |
+| Technology | Security & logging | Konfigurasi IAM, KMS, log audit | 100% akses via IAM; log ≥ 180 hari |
+| Model | Eval & bias testing | Laporan evaluasi, model card | Threshold akurasi ≥ X; bias gap ≤ Y |
+| Compliance | DPIA/AIA | Form DPIA/AIA, review legal | Status: complete/approved |
+
+## 11. Keputusan & Risk Acceptance
+- Ringkasan residual risk:
+- Keputusan (approve/conditional/deny):
+- Tindak lanjut & pemilik aksi:
+
+## 12. Tanda Tangan
+- Model Owner:
+- Risk/Compliance:
+- DPO/Legal:
+- CIO/CTO (jika perlu):
+
+> *Simpan AIA ini bersama DPIA, Model Card, dan Datasheet untuk satu sumber kebenaran (audit-ready).*

@@ -116,48 +116,6 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      
-    
     
   </nav>
   
@@ -399,6 +357,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Risk Register
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -410,6 +381,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#risiko-utama" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔎 Risiko Utama
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risk-matrix-contoh" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Risk Matrix (Contoh)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -900,7 +908,7 @@
   
   
   <span class="md-ellipsis">
-    Bab 2 - Tinjauan Pustaka
+    Bab 2 - Literature Review
     
   </span>
   
@@ -970,6 +978,29 @@
   
   <span class="md-ellipsis">
     Bab 5 - Kesimpulan & Rekomendasi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thesis/appendix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Appendix
     
   </span>
   
@@ -1801,53 +1832,66 @@
 
 
 
-<h1 id="risk-register-ai-governance">📊 Risk Register – AI Governance</h1>
+<h1 id="risk-register-ai-governance">📋 Risk Register AI Governance</h1>
+<p>Risk Register ini membantu organisasi mengidentifikasi, menilai, dan memitigasi risiko utama dalam penerapan AI.<br />
+Disusun berdasarkan <strong>NIST AI RMF</strong>, <strong>COBIT 2019</strong>, serta regulasi Indonesia (<strong>UU PDP, POJK</strong>).</p>
+<hr />
+<h2 id="risiko-utama">🔎 Risiko Utama</h2>
 <table>
 <thead>
 <tr>
-<th>ID</th>
 <th>Risiko</th>
-<th>Framework Referensi</th>
+<th>Deskripsi</th>
 <th>Dampak</th>
-<th>Mitigasi</th>
-<th>Owner</th>
+<th>Mitigasi / Kontrol</th>
+<th>Evidence</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>R1</td>
-<td>Bias dataset</td>
-<td>NIST AI RMF, STRANAS AI</td>
+<td><strong>Hallucination</strong></td>
+<td>Model menghasilkan output salah/tidak relevan.</td>
 <td>Tinggi</td>
-<td>Bias testing, fairness metrics</td>
-<td>Data Scientist</td>
+<td>Human-in-the-loop, Prompt mgmt</td>
+<td>Prompt Management Policy</td>
 </tr>
 <tr>
-<td>R2</td>
-<td>Kebocoran PII</td>
-<td>UU PDP, POJK</td>
+<td><strong>Model Drift</strong></td>
+<td>Performa model turun karena perubahan data lingkungan.</td>
 <td>Tinggi</td>
-<td>PII Redaction, consent mgmt</td>
-<td>DPO</td>
+<td>Retraining pipeline, Monitoring</td>
+<td>Retraining Log, Eval Report</td>
 </tr>
 <tr>
-<td>R3</td>
-<td>Model drift</td>
-<td>COBIT MEA, NIST</td>
-<td>Sedang</td>
-<td>Retraining pipeline</td>
-<td>MLOps</td>
+<td><strong>Data Leakage</strong></td>
+<td>Informasi sensitif terekspos dalam output model.</td>
+<td>Sangat Tinggi</td>
+<td>PII Redaction, Access Control</td>
+<td>DPIA, Access Log</td>
 </tr>
 <tr>
-<td>R4</td>
-<td>Hallucination LLM</td>
-<td>NIST AI RMF</td>
+<td><strong>Bias &amp; Fairness</strong></td>
+<td>Output AI diskriminatif terhadap kelompok tertentu.</td>
+<td>Tinggi</td>
+<td>Bias testing, Fairness metric</td>
+<td>Fairness Report, Model Card</td>
+</tr>
+<tr>
+<td><strong>Security Threat</strong></td>
+<td>Serangan adversarial atau manipulasi data input.</td>
 <td>Sedang</td>
-<td>Prompt mgmt, RAG</td>
-<td>AI Engineer</td>
+<td>Red Teaming, Penetration Testing</td>
+<td>Red Teaming Report</td>
 </tr>
 </tbody>
 </table>
+<hr />
+<h2 id="risk-matrix-contoh">📊 Risk Matrix (Contoh)</h2>
+<pre class="mermaid"><code>flowchart TD
+  A["Risiko AI"] --&gt; B["Probabilitas"]
+  A --&gt; C["Dampak"]
+  B --&gt; D["Risk Score = Prob × Impact"]
+  C --&gt; D</code></pre>
 
 
 
@@ -1910,6 +1954,8 @@
         <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
       
         <script src="../../assets/js/mermaid-init.js"></script>
+      
+        <script src="../../assets/stylesheets/hide-ref-footnotes.css"></script>
       
     
   </body>

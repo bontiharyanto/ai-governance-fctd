@@ -1,0 +1,19 @@
+# Bab 5 – Kesimpulan dan Rekomendasi
+
+## 5.1 Kesimpulan
+1. Framework FCTD terbukti dapat **menyelaraskan best practice internasional (NIST, TOGAF, COBIT)** dengan regulasi nasional Indonesia.  
+2. Adopsi AI di industri Indonesia masih rendah, mayoritas organisasi **belum memiliki governance framework formal**.  
+3. Studi kasus menunjukkan tantangan besar ada pada **regulasi data (on-prem vs cloud)**, **ethical risks (bias, fairness)**, dan **kesiapan SDM**.  
+4. Crosswalk kontrol → evidence → metrics memungkinkan **audit readiness** dan memperkuat trust terhadap sistem AI.  
+
+---
+
+## 5.2 Rekomendasi Praktis
+- **Bagi Regulator:** perkuat harmonisasi regulasi (UU PDP ↔ POJK ↔ STRANAS AI).  
+- **Bagi Industri:** adopsi framework FCTD secara bertahap (mulai dari risk register & model card).  
+- **Bagi Akademisi:** kembangkan metode evaluasi AI governance berbasis **metrics kuantitatif + kualitatif**.  
+- **Future Work:** perluasan framework ke **AI generatif**, serta integrasi dengan **ISO/IEC 42001 (AI Management System)**.  
+
+---
+
+✅ Dengan Bab 4 & 5 ini, struktur thesis **Bab 1–5** sudah lengkap dan bisa langsung dipakai untuk repo & thesis.

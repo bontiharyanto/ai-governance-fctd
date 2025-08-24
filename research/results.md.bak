@@ -1,3 +1,5 @@
+--8<-- "research/_generated/results_summary.md"
+
 # 📈 Research Results (DPPT → Business Impact)
 
 Di halaman ini ditampilkan **profil readiness per cluster**, **koefisien regresi**, dan **akurasi model** dari dataset terbaru.
@@ -5,12 +7,12 @@ Di halaman ini ditampilkan **profil readiness per cluster**, **koefisien regresi
 > Grafik dihasilkan otomatis dari `data/sample_survey.csv` melalui script di `tools/ai_analysis/`.
 
 ## Readiness Profile by Cluster
-![Radar](../../reports/radar_clusters.png)
+![Radar](reports/radar_clusters.png)
 
 ## Regression Coefficients
-![Coefs](../../reports/regression_coeffs.png)
+![Coefs](reports/regression_coeffs.png)
 
 ## Actual vs Predicted
-![Pred](../../reports/pred_vs_actual.png)
+![Pred](reports/pred_vs_actual.png)
 
 > Catatan: Jalankan `visualize_survey.py` untuk memperbarui gambar di folder `reports/`.

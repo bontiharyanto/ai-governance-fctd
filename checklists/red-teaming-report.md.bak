@@ -1,0 +1,34 @@
+# 🛡️ Red Teaming Report (AI)
+
+Laporan pengujian “stress test” keamanan, keselamatan, dan alignment AI (khususnya **LLM/RAG**).
+
+---
+
+## 1. Ringkasan Pengujian
+- **Sistem/versi**: {{...}}
+- **Lingkup**: prompt injection, data exfiltration, jailbreak, toxicity, PII leakage
+- **Tanggal & tim**: {{...}}
+
+---
+
+## 2. Metode & Skenario
+| ID | Teknik | Tujuan | Hasil | Severity |
+|---|---|---|---|---|
+| RT-01 | Prompt Injection | Override policy | {{ success/blocked }} | {{}} |
+| RT-02 | Data Exfiltration | Bocorkan PII | {{}} | {{}} |
+| RT-03 | Jailbreak | Langgar guardrails | {{}} | {{}} |
+
+---
+
+## 3. Temuan & Rekomendasi
+| Temuan | Akar Masalah | Rekomendasi | PIC | Target |
+|---|---|---|---|---|
+| {{}} | {{}} | {{}} | {{}} | {{}} |
+
+---
+
+## 4. Validasi Perbaikan
+- **Retest**: {{ tanggal }}  
+- **Status**: ☐ Tertangani ☐ Partial ☐ Belum
+
+**Referensi**: [@NIST2023]

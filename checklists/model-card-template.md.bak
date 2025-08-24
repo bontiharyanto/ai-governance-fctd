@@ -1,0 +1,46 @@
+# Model Card — Template
+
+## 1. Identitas Model
+- Nama & versi:
+- Jenis (classifier/regressor/LLM/RAG):
+- Owner & contact:
+- Tanggal rilis:
+
+## 2. Intended Use & Out-of-Scope
+- Kegunaan yang dimaksud:
+- Batasan & anti-use:
+
+## 3. Data & Pembelajaran
+- Sumber & periode data
+- Lisensi & legal basis
+- Pembagian train/valid/test
+- Pre-processing
+
+## 4. Metrik Evaluasi
+| Metrik | Nilai | Threshold | Catatan |
+|---|---:|---:|---|
+| Akurasi/ROC/F1/… |  |  |  |
+| Fairness (gap antar grup) |  |  |  |
+| Robustness/stress |  |  |  |
+
+## 5. Monitoring & Drift
+- Indikator drift (data & performa)
+- Alarm & SOP rollback
+- Rencana retraining
+
+## 6. Keamanan & Penyalahgunaan
+- Rate limiting, content filter (untuk LLM)
+- Red teaming & mitigasi
+
+## 7. Crosswalk Kontrol → Evidence → Metrik
+| Kontrol | Evidence | Metrik |
+|---|---|---|
+| Validasi model | Laporan evaluasi | > threshold akurasi |
+| Fairness | Hasil fairness audit | gap ≤ X% |
+| Monitoring | Dashboard, alert | MTTR ≤ Y jam |
+| Dokumentasi | Model card lengkap | status: complete |
+
+## 8. Rilis & Persetujuan
+- Model Owner:
+- Risk/Compliance:
+- Production owner:

@@ -1,0 +1,47 @@
+# Data Protection Impact Assessment (DPIA) — Template
+
+!!! info "Kapan perlu DPIA?"
+    Jika pemrosesan data menimbulkan risiko tinggi terhadap hak & kebebasan subjek data (UU PDP).
+
+## 1. Ringkasan Pemrosesan
+- Tujuan pemrosesan:
+- Kategori subjek data & data yang diolah:
+- Dasar hukum pemrosesan (consent/contract/dst):
+- Pihak ketiga/pengolah data (processor) & lokasi:
+
+## 2. Penilaian Kebutuhan & Proporsionalitas
+- Minimization, purpose limitation, data retention
+- Hak subjek data: akses, koreksi, penghapusan, keberatan
+- Data residency (lokasi penyimpanan/pemrosesan)
+
+## 3. Analisis Risiko & Dampak
+| Risiko | Dampak pada subjek | Probabilitas | Dampak | Level | Pengendalian |
+|---|---|---|---|---:|---|
+| Kebocoran PII |  |  |  |  |  |
+| Akses tidak sah |  |  |  |  |  |
+| Transfer lintas batas |  |  |  |  |  |
+| Salah gunakan tujuan |  |  |  |  |  |
+
+## 4. Kontrol & Safeguards
+- Teknik: enkripsi, tokenisasi, pseudonimisasi
+- Organisasi: SoD, akses berbasis least privilege, audit trail
+- Kontraktual: DPA, SCC/clauses, sub-processor register
+
+## 5. Crosswalk Kontrol → Evidence → Metrik
+| Kontrol | Evidence | Metrik |
+|---|---|---|
+| Consent/notice | Teks consent, log persetujuan | % consent valid, revocation time |
+| Retensi | Kebijakan retensi, bukti purge | % objek melewati retensi=0 |
+| Akses | Matriks IAM, review akses | % akses tepat fungsi; temuan=0 |
+| Transfer data | DPA, daftar lokasi | SLA DPA < X hari; status valid |
+
+## 6. Konsultasi
+- DPO/Legal:
+- Regulator (jika perlu):
+- Serikat/Perwakilan (jika relevan):
+
+## 7. Keputusan
+- Residual risk:
+- Approval & kondisi:
+
+*Tautkan DPIA ini ke AIA, Model Card, dan Datasheet untuk traceability.*

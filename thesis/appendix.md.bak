@@ -1,0 +1,85 @@
+# 📑 Lampiran (Appendix)
+
+## 1. Template Evidence (Audit-Ready)
+
+### 1.1 AI Impact Assessment (AIA)
+| Komponen | Pertanyaan | Bukti/Evidence |
+|----------|------------|----------------|
+| Tujuan Sistem AI | Apa tujuan penggunaan AI? | Dokumen business case |
+| Dataset | Sumber data, kualitas, bias | Datasheet, Data inventory |
+| Risiko | Risiko privasi, bias, drift | Risk Register |
+| Mitigasi | Kontrol & prosedur mitigasi | Policy, SOP, Logs |
+| Evaluasi | Kinerja model & fairness | Model Card, Metrics |
+
+### 1.2 Data Protection Impact Assessment (DPIA)
+| Bagian | Pertanyaan Utama | Evidence |
+|--------|------------------|----------|
+| Scope Data | Data pribadi apa yang diproses? | Data mapping |
+| Legal Basis | Dasar hukum pemrosesan | Consent, kontrak |
+| Risiko | Risiko privasi & keamanan | Risk Register |
+| Mitigasi | Kontrol teknis & organisasi | Security policy |
+| Review | Siapa yang melakukan review? | Audit record |
+
+### 1.3 Model Card
+| Bagian | Konten | Evidence |
+|--------|--------|----------|
+| Deskripsi Model | Use case, arsitektur | Dokumentasi teknis |
+| Data Training | Distribusi & preprocessing | Datasheet |
+| Evaluasi | Akurasi, fairness, drift | Metrics, charts |
+| Batasan | Keterbatasan penggunaan | Disclaimer |
+| Governance | PIC & penanggung jawab | Sign-off |
+
+### 1.4 Datasheet
+| Elemen | Deskripsi | Evidence |
+|--------|-----------|----------|
+| Sumber Data | Data berasal dari mana | Datasheet |
+| Tujuan | Untuk apa data dikumpulkan | Policy |
+| Bias Potensial | Bias representasi? | Analisis |
+| Retensi | Lama penyimpanan | Policy |
+| Akses | Siapa yang bisa akses | IAM logs |
+
+### 1.5 Red Teaming Report
+| Bagian | Isi | Evidence |
+|--------|-----|----------|
+| Skop | Apa yang diuji | Test plan |
+| Metode | Jenis serangan (prompt injection, adversarial) | Logs |
+| Hasil | Temuan & tingkat risiko | Report |
+| Mitigasi | Tindakan perbaikan | Patch note |
+
+---
+
+## 2. Ringkasan Survey (Indonesia)
+
+- **Jumlah Responden**: 150 (Banking, Financial, Health, IT, Indonesia).  
+- **Status Implementasi AI**:  
+  - Sudah implementasi: 40%  
+  - Sedang pilot: 30%  
+  - Baru rencana: 25%  
+  - Tidak ada rencana: 5%  
+
+- **Kendala Utama**:  
+  1. Kurangnya SDM ahli AI.  
+  2. Regulasi & kepatuhan (UU PDP, POJK).  
+  3. Infrastruktur (cloud vs on-premises).  
+  4. Risiko reputasi & kepercayaan publik.
+
+---
+
+## 3. Crosswalk Regulasi ↔ Framework
+
+| Regulasi / Framework | DPPT Pilar | Kontrol | Evidence | Metrik |
+|----------------------|------------|---------|----------|--------|
+| **UU PDP** | Data, Policy | Consent, data subject rights | DPIA, consent logs | Jumlah permintaan hak subjek |
+| **POJK** | Process, Tech | IT risk management | IT audit, logs | Kepatuhan POJK |
+| **STRANAS AI** | People, Policy | Etika AI nasional | Policy doc | Kesesuaian target STRANAS |
+| **NIST AI RMF** | Data, Process, Tech | Govern, Map, Measure, Manage | AIA, Model Card | RMSE, fairness |
+| **COBIT** | Process, Policy | EDM, APO, DSS | ITSM, SOP | COBIT maturity level |
+| **TOGAF** | Data, Process, Tech | Architecture governance | Architecture doc | TOGAF compliance |
+
+---
+
+✅ Lampiran ini siap dipakai untuk:  
+- **Audit** (kontrol → evidence → metrik).  
+- **Sidang thesis** sebagai bukti kelengkapan framework.  
+- **Deployment GitHub Pages** agar publik bisa melihat struktur evidence & survey.
+

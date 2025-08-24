@@ -2,246 +2,254 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://bontiharyanto.github.io/ai-governance-fctd/finos-alignment/</loc>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/references/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/roadmap/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/third-party-assessment/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/_fragments/latest-updates/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/checklists/ai-impact-assessment-template/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/checklists/datasheet-template/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/checklists/dpia-template/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/checklists/model-card-template/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/checklists/red-teaming-report/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/compliance/crosswalk-nist-finos-dppt/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/compliance/finos-alignment/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/compliance/regulatory-mapping/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/controls/audit-trail/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/controls/explainability/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/controls/model-registry/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/controls/pii-redaction/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/controls/prompt-management/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/examples/bank-credit-scoring/aia-example/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/examples/bank-credit-scoring/datasheet-example/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/examples/bank-credit-scoring/dpia-example/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/examples/bank-credit-scoring/model-card-example/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/examples/use-cases/customer-support-rag/aia/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/examples/use-cases/customer-support-rag/case-study-1/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/examples/use-cases/customer-support-rag/model-card/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/governance/operating-model/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/governance/principles/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/governance/roles-and-responsibilities/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/lifecycle/ai-lifecycle/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/lifecycle/data-governance/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/lifecycle/deployment/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/lifecycle/evaluation/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/lifecycle/ideation-checklist/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/lifecycle/model-card/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/lifecycle/model-development/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/lifecycle/monitoring/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/lifecycle/retraining-pipeline/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/lifecycle/rollback-plan/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/research/ai-toolkit/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/research/analytical-methods/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/research/diagram-mermaid/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/research/literature-review-framework/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/research/research-framework/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/research/research-frameworkbck/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/research/results/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/research/_generated/results_summary/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/risk/data-leakage/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/risk/hallucination/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/risk/model-drift/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/risk/risk-register/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/risk/controls/human-in-the-loop/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/risk/controls/pii-redaction/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/risk/controls/prompt-management/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/risk/risks/data-leakage/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/risk/risks/hallucination/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/risk/risks/model-drift/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://bontiharyanto.github.io/ai-governance-fctd/thesis/appendix/</loc>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/thesis/bab1-introduction/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/thesis/bab2-literature-review/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/thesis/bab3-methodology/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/thesis/bab4-results-discussion/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
     <url>
          <loc>https://bontiharyanto.github.io/ai-governance-fctd/thesis/bab5-conclusion/</loc>
-         <lastmod>2025-08-23</lastmod>
+         <lastmod>2025-08-24</lastmod>
     </url>
 </urlset>

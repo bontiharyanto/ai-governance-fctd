@@ -1,0 +1,28 @@
+# 📋 Risk Register AI Governance
+
+Risk Register ini membantu organisasi mengidentifikasi, menilai, dan memitigasi risiko utama dalam penerapan AI.  
+Disusun berdasarkan **NIST AI RMF**, **COBIT 2019**, serta regulasi Indonesia (**UU PDP, POJK**).
+
+---
+
+## 🔎 Risiko Utama
+
+| Risiko             | Deskripsi                                                                 | Dampak      | Mitigasi / Kontrol                | Evidence                   |
+|--------------------|---------------------------------------------------------------------------|-------------|-----------------------------------|----------------------------|
+| **Hallucination**  | Model menghasilkan output salah/tidak relevan.                           | Tinggi      | Human-in-the-loop, Prompt mgmt    | Prompt Management Policy   |
+| **Model Drift**    | Performa model turun karena perubahan data lingkungan.                    | Tinggi      | Retraining pipeline, Monitoring   | Retraining Log, Eval Report |
+| **Data Leakage**   | Informasi sensitif terekspos dalam output model.                          | Sangat Tinggi | PII Redaction, Access Control    | DPIA, Access Log           |
+| **Bias & Fairness**| Output AI diskriminatif terhadap kelompok tertentu.                       | Tinggi      | Bias testing, Fairness metric     | Fairness Report, Model Card|
+| **Security Threat**| Serangan adversarial atau manipulasi data input.                          | Sedang      | Red Teaming, Penetration Testing  | Red Teaming Report          |
+
+---
+
+## 📊 Risk Matrix (Contoh)
+
+```mermaid
+flowchart TD
+  A["Risiko AI"] --> B["Probabilitas"]
+  A --> C["Dampak"]
+  B --> D["Risk Score = Prob × Impact"]
+  C --> D
+```

@@ -1,0 +1,40 @@
+# Bab 4 – Hasil dan Pembahasan
+
+## 4.1 Hasil Analisis Framework
+Penelitian ini berhasil membangun **FCTD AI Governance Framework** yang mengintegrasikan:
+- **DPPT (Data, Process, People, Technology, Policy)**
+- **Kerangka internasional:** NIST AI RMF, TOGAF, COBIT
+- **Regulasi Indonesia:** UU PDP, POJK, STRANAS AI
+
+Framework ini divisualisasikan dalam diagram, menunjukkan hubungan antara **governance, risk, controls, lifecycle, dan compliance mapping**.
+
+![FCTD AI Governance Framework](../assets/img/fctd-governance.png)
+
+---
+
+## 4.2 Hasil Survey Industri
+Survey dengan **150 responden** dari sektor **banking, financial services, healthcare, dan IT** di Indonesia memberikan temuan:
+
+- 65% organisasi **belum memiliki AI governance formal**.  
+- 20% baru tahap **eksperimen pilot project AI**.  
+- 15% sudah memiliki **kebijakan AI governance terbatas** (data privacy & compliance).  
+- Faktor utama penghambat: keterbatasan SDM (45%), regulasi (30%), biaya (25%).
+
+---
+
+## 4.3 Studi Kasus Indonesia
+- **Banking & Financial Services:** adopsi AI untuk credit scoring wajib sejalan dengan **POJK 38/POJK.03/2016** dan mitigasi risiko data pribadi (UU PDP).  
+- **Healthcare:** AI diagnostic tools harus melalui evaluasi **Kemenkes** dan audit etika (bias dataset).  
+- **IT Sector:** cloud AI services menimbulkan dilema **on-prem vs on-cloud**, di mana perusahaan Indonesia cenderung memilih hybrid karena alasan regulasi data.
+
+---
+
+## 4.4 Crosswalk Kontrol – Evidence – Metrics
+
+| Area        | Kontrol                               | Evidence (Bukti)                        | Metrics                          |
+|-------------|---------------------------------------|-----------------------------------------|----------------------------------|
+| Governance  | Kebijakan AI Governance                | Dokumen kebijakan, persetujuan manajemen | # kebijakan yang diadopsi        |
+| Risk        | Risk Register AI                      | Risk log, matriks risiko                 | % risiko dengan mitigasi aktif   |
+| Controls    | PII Redaction, Explainability         | Log redaksi PII, laporan model explain   | % akurasi + % PII terlindungi    |
+| Lifecycle   | Model Registry & Monitoring           | Model card, audit trail                  | # model teregistrasi & dimonitor |
+| Compliance  | Regulatory Alignment (UU PDP, POJK)   | AIA, DPIA, dokumen compliance            | Jumlah kontrol selaras regulasi  |

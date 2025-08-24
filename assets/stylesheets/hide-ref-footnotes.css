@@ -1,0 +1,5 @@
+/* Sembunyikan penanda footnote pada halaman "References" saja */
+body[data-md-name="references"] sup.footnote-ref,
+body[data-md-page="references"] sup.footnote-ref {
+  display: none !important;
+}
